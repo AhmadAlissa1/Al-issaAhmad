@@ -109,8 +109,7 @@
       <a
         href="#projects"
         class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-        >Explore My Work</a
-      >
+        >Explore My Work</a>
     </div>
   </section>
 
@@ -118,9 +117,10 @@
   <section id="about" class="fade-in container mx-auto px-6 py-16">
     <div class="flex flex-col md:flex-row items-center">
       <div class="w-full md:w-1/3 mb-8 md:mb-0">
+        <!-- Using the local image me.jpg -->
         <img
-          src="https://via.placeholder.com/300"
-          alt="Profile"
+          src="me.jpg"
+          alt="Profile Picture"
           class="rounded-full shadow-lg"
         />
       </div>
@@ -232,81 +232,72 @@
       <div id="project4" class="tab-content active">
         <h4 class="text-3xl font-bold mb-4">Serial Number Customization</h4>
         <p class="text-lg mb-6">
-          Allow users to bulk submit serial numbers during item receipt and
-          enable them to select serial numbers during delivery order (DO) based
-          on first-in-first-out (FIFO) and quantity.
+          This project revolutionizes inventory management by streamlining the bulk submission of serial numbers during item receipt, and enabling intelligent, FIFO-based selection during delivery orders for accurate tracking.
         </p>
         <a
-          href="projects/serial-number-customization/index.html"
-          class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-          >View Project</a
-        >
+          href="#"
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
+          >View Project</a>
       </div>
 
       <!-- Disassembly Item -->
       <div id="project5" class="tab-content">
         <h4 class="text-3xl font-bold mb-4">Disassembly Item</h4>
         <p class="text-lg mb-6">
-          Break down disassembled items into multiple serialized and non-serialized
-          items, creating inventory adjustments to account for items in and out.
+          Transforming product lifecycle management, this solution automates the breakdown of disassembled items into serialized and non-serialized components while ensuring precise inventory adjustments.
         </p>
         <a
-          href="projects/disassembly-item/index.html"
-          class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-          >View Project</a
-        >
+          href="#"
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
+          >View Project</a>
       </div>
 
       <!-- Integration with IRBM -->
       <div id="project6" class="tab-content">
         <h4 class="text-3xl font-bold mb-4">Integration with IRBM</h4>
         <p class="text-lg mb-6">
-          Integrate NetSuite with LHDN to submit invoices and retrieve validated invoices.
+          Bridging the gap between systems, this integration seamlessly connects NetSuite with LHDN to automate invoice submission and validation, enhancing financial compliance and operational efficiency.
         </p>
         <a
-          href="projects/integration-with-irbm/index.html"
-          class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-          >View Project</a
-        >
+          href="#"
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
+          >View Project</a>
       </div>
 
       <!-- EFT Customization -->
       <div id="project7" class="tab-content">
         <h4 class="text-3xl font-bold mb-4">EFT Customization</h4>
         <p class="text-lg mb-6">
-          Customize templates for MUFG, SMBC, Mizuho, CitiBank, and Singapore banks.
+          A tailored solution for financial operations, this project customizes EFT templates for leading banks to ensure secure, compliant, and efficient transaction processing.
         </p>
         <a
-          href="projects/eft-customization/index.html"
-          class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-          >View Project</a
-        >
+          href="#"
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
+          >View Project</a>
       </div>
 
       <!-- Price Log Change -->
       <div id="project8" class="tab-content">
         <h4 class="text-3xl font-bold mb-4">Price Log Change for Item</h4>
         <p class="text-lg mb-6">
-          Update item prices in the system.
+          This solution provides a dynamic system to update item pricing in real time, ensuring accuracy and competitiveness in rapidly changing market conditions.
         </p>
         <a
-          href="projects/price-log-change-for-item/index.html"
-          class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-          >View Project</a
-        >
+          href="#"
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
+          >View Project</a>
       </div>
 
       <!-- Warranty Check -->
       <div id="project9" class="tab-content">
         <h4 class="text-3xl font-bold mb-4">Warranty Check</h4>
         <p class="text-lg mb-6">
-          Verify the uniqueness of serial numbers in invoices to prevent duplicates.
+          Enhancing quality control, this tool verifies the uniqueness of serial numbers on invoices, effectively preventing duplicates and ensuring product integrity.
         </p>
         <a
-          href="projects/warranty-check-for-duplicate-serial-number/index.html"
-          class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-          >View Project</a
-        >
+          href="#"
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
+          >View Project</a>
       </div>
     </div>
   </section>
@@ -328,7 +319,7 @@
     </div>
   </footer>
 
-  <!-- JavaScript for Tab Transitions and Section Fade-In -->
+  <!-- JavaScript for Tab Transitions, Section Fade-In, and Project Link Handling -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       // Tab transitions for Projects
@@ -365,6 +356,15 @@
 
       faders.forEach(fader => {
         appearOnScroll.observe(fader);
+      });
+
+      // Prevent navigation on project links and show alert instead
+      const projectLinks = document.querySelectorAll('.project-link');
+      projectLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          alert('Project details coming soon!');
+        });
       });
     });
   </script>
