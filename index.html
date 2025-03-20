@@ -1,163 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio showcasing web development projects and skills">
-    <title>John Doe | Web Developer Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts Integration -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Meta Tags for SEO and accessibility -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio showcasing skills, projects, and experience.">
+  <title>Professional Portfolio</title>
+  <!-- Tailwind CSS via CDN (works directly on GitHub Pages) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom styles (if needed) -->
+  <style>
+    /* You can add custom CSS here if required */
+  </style>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-gray-50 text-gray-900">
+  <!-- Header: Navigation bar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">My Portfolio</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-500">About</a></li>
+          <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Header Section -->
-    <header class="fixed top-0 w-full bg-white z-50 shadow-md">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold text-gray-800">John Doe</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="#home" class="text-gray-600 hover:text-gray-800 transition">Home</a>
-                <a href="#about" class="text-gray-600 hover:text-gray-800 transition">About</a>
-                <a href="#projects" class="text-gray-600 hover:text-gray-800 transition">Projects</a>
-                <a href="#contact" class="text-gray-600 hover:text-gray-800 transition">Contact</a>
-            </div>
-        </nav>
-    </header>
+  <!-- Hero Section: Welcoming message with background image -->
+  <section id="home" class="relative h-screen flex items-center justify-center text-center">
+    <!-- Background image overlay -->
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1920x1080');"></div>
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <!-- Content -->
+    <div class="relative z-10 text-white p-4">
+      <h2 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h2>
+      <p class="text-lg mb-6">I am a professional web developer with a passion for creating modern and responsive designs.</p>
+      <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
+        View Projects
+      </a>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="pt-24 pb-32 bg-gradient-to-r from-blue-500 to-purple-500 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm John Doe</h1>
-            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Full-stack web developer specializing in building modern, responsive web applications</p>
-            <a href="#projects" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">View My Work</a>
-        </div>
-    </section>
+  <!-- About Section: Biography with professional photo -->
+  <section id="about" class="container mx-auto px-4 py-16">
+    <div class="flex flex-col md:flex-row items-center">
+      <!-- Professional photo -->
+      <div class="md:w-1/3 mb-6 md:mb-0">
+        <img src="https://via.placeholder.com/300" alt="Professional Photo" class="rounded-full shadow-lg">
+      </div>
+      <!-- Biography and skills -->
+      <div class="md:w-2/3 md:pl-10">
+        <h3 class="text-3xl font-bold mb-4">About Me</h3>
+        <p class="mb-4">
+          I have extensive experience in web development, specializing in building responsive and accessible websites using modern technologies such as HTML, CSS, and Tailwind CSS.
+        </p>
+        <h4 class="text-xl font-semibold mb-2">Skills</h4>
+        <ul class="list-disc list-inside">
+          <li>HTML, CSS, JavaScript</li>
+          <li>Responsive Design & Mobile Development</li>
+          <li>Tailwind CSS & Bootstrap</li>
+          <li>React & Vue.js</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div class="flex items-center">
-                <img src="profile.jpg" alt="Professional photo of John Doe" 
-                     class="w-full rounded-lg shadow-lg object-cover aspect-[4/5]">
-            </div>
-            <div class="flex flex-col justify-center">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
-                <p class="text-gray-600 mb-6">Experienced web developer with 5+ years of experience building scalable web applications. Proficient in:</p>
-                <div class="grid grid-cols-2 gap-4 mb-6">
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span>JavaScript/TypeScript</span>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span>React & Next.js</span>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span>Node.js & Express</span>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <span>AWS & Docker</span>
-                    </div>
-                </div>
-                <a href="#contact" class="self-start bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Let's Connect</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Featured Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Project Card -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-                    <img src="project1.jpg" alt="Project 1 screenshot" 
-                         class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">E-commerce Platform</h3>
-                        <p class="text-gray-600 mb-4">Full-stack e-commerce solution with payment integration and user authentication</p>
-                        <div class="flex space-x-4">
-                            <a href="#" class="text-blue-500 hover:text-blue-700">Live Demo</a>
-                            <a href="#" class="text-gray-500 hover:text-gray-700">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repeat for other projects -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Get In Touch</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <form class="space-y-6">
-                    <div>
-                        <label for="name" class="block text-gray-700 mb-2">Name</label>
-                        <input type="text" id="name" required 
-                               class="w-full px-4 py-3 rounded-lg border focus:ring-blue-500 focus:border-blue-500">
-                    </div>
-                    <div>
-                        <label for="email" class="block text-gray-700 mb-2">Email</label>
-                        <input type="email" id="email" required 
-                               class="w-full px-4 py-3 rounded-lg border focus:ring-blue-500 focus:border-blue-500">
-                    </div>
-                    <div>
-                        <label for="message" class="block text-gray-700 mb-2">Message</label>
-                        <textarea id="message" rows="5" required 
-                                  class="w-full px-4 py-3 rounded-lg border focus:ring-blue-500 focus:border-blue-500"></textarea>
-                    </div>
-                    <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
-                        Send Message
-                    </button>
-                </form>
-                <div class="flex flex-col space-y-6">
-                    <div class="flex items-center space-x-4">
-                        <svg class="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2c-2.757 0-5 2.243-5 5 0 5.264 3.853 10.736 8.544 16.193 0.169 0.161 0.371 0.257 0.586 0.257s0.417-0.096 0.586-0.257c4.691-5.457 8.544-10.929 8.544-16.193 0-2.757-2.243-5-5-5s-5 2.243-5 5c0 0.414 0.336 0.75 0.75 0.75s0.75-0.336 0.75-0.75c0-1.654-1.346-3-3-3s-3 1.346-3 3c0 0.414 0.336 0.75 0.75 0.75s0.75-0.336 0.75-0.75c0-3.309 2.691-6 6-6s6 2.691 6 6c0 3.309-2.691 6-6 6z"></path>
-                        </svg>
-                        <a href="mailto:hello@johndoe.com" class="text-gray-700 hover:text-blue-600">hello@johndoe.com</a>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <svg class="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2.4c-4.8 0-8.7 3.9-8.7 8.7 0 3.6 2.3 6.7 5.6 8.1v-6.3h-1.8v-2.5h1.8v-2c0-1.8 0.6-3.2 2.7-3.2 1.1 0 1.9 0.4 2.1 0.6v2.8h-1.5c-0.3 0-0.6 0.2-0.6 0.6v1.6h2.3l-0.4 2.5h-1.9v6.4c3.3-1.4 5.6-4.5 5.6-8.1 0-4.8-3.9-8.7-8.7-8.7zm0 13.3c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path>
-                        </svg>
-                        <a href="https://linkedin.com/in/johndoe" class="text-gray-700 hover:text-blue-600">LinkedIn</a>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <svg class="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0 18c4.411 0 8-3.589 8-8s-3.589-8-8-8-8 3.589-8 8 3.589 8 8 8zm5.5-9c0-1.094-.344-2.077-1.031-2.906l-1.031-1.547c-1.219-1.828-3.094-2.906-5.156-2.906s-3.938 1.078-5.156 2.906L3.5 11.094C2.844 11.923 2.5 12.906 2.5 14v1h19v-1c0-1.094-.344-2.077-1.031-2.906zM12 14c-1.656 0-3-1.344-3-3s1.344-3 3-3 3 1.344 3 3-1.344 3-3 3z"></path>
-                        </svg>
-                        <a href="https://github.com/johndoe" class="text-gray-700 hover:text-blue-600">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="py-8 bg-gray-800 text-white">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-            <p class="text-center md:text-left mb-4 md:mb-0">&copy; 2024 John Doe. All rights reserved.</p>
+  <!-- Projects Section: Grid layout for showcasing projects -->
+  <section id="projects" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-12">My Projects</h3>
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Project 1 -->
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="https://via.placeholder.com/600x400" alt="Project 1" class="w-full">
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">Project One</h4>
+            <p class="mb-4">A brief description of Project One highlighting its features and technologies used.</p>
             <div class="flex space-x-4">
-                <a href="#home" class="hover:text-blue-500">Home</a>
-                <a href="#about" class="hover:text-blue-500">About</a>
-                <a href="#projects" class="hover:text-blue-500">Projects</a>
-                <a href="#contact" class="hover:text-blue-500">Contact</a>
+              <a href="#" class="text-blue-500 hover:underline">Live Demo</a>
+              <a href="#" class="text-blue-500 hover:underline">GitHub</a>
             </div>
+          </div>
         </div>
-    </footer>
+        <!-- Project 2 -->
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="https://via.placeholder.com/600x400" alt="Project 2" class="w-full">
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">Project Two</h4>
+            <p class="mb-4">A brief description of Project Two highlighting its features and technologies used.</p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-blue-500 hover:underline">Live Demo</a>
+              <a href="#" class="text-blue-500 hover:underline">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <img src="https://via.placeholder.com/600x400" alt="Project 3" class="w-full">
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">Project Three</h4>
+            <p class="mb-4">A brief description of Project Three highlighting its features and technologies used.</p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-blue-500 hover:underline">Live Demo</a>
+              <a href="#" class="text-blue-500 hover:underline">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</body>
-</html>
+  <!-- Contact Section: Contact form and social media links -->
+  <section id="contact" class="container mx-auto px-4 py-16">
+    <h3 class="text-3xl font-bold text-center mb-8">Contact Me</h3>
+    <div class="max-w-lg mx-auto">
+      <form action="#" method="POST" class="bg-white shadow-md rounded px-8 py-8 mb-4">
+        <!-- Name field -->
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+        </div>
+        <!-- Email field -->
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+        </div>
+        <!-- Message field -->
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required></textarea>
+        </div>
+        <!-- Submit button -->
+        <div class="flex items-center justify-between">
+          <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            Send Message
+          </button>
+        </div>
+      </form>
+      <!-- Social Media Links -->
+      <div class="text-center">
+        <p class="mb-2">Connect with me:</p>
+        <div class="flex justify-center space-x-4">
+          <a href="#" class="text-blue-500 hover:text-blue-700">LinkedIn</a>
+          <a href="#" class="text-gray-800 hover:text-gray-600">GitHub</a>
+          <!-- Add additional social links as needed -->
+        </div>
+      </div>
+    </div>
+  </s
