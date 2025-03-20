@@ -1,153 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Tags for SEO and accessibility -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional portfolio showcasing skills, projects, and experience.">
-  <title>Professional Portfolio</title>
-  <!-- Tailwind CSS via CDN (works directly on GitHub Pages) -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Custom styles (if needed) -->
-  <style>
-    /* You can add custom CSS here if required */
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Ahmad - ERP Technical Consultant, Backend Developer, and Tester.">
+    <title>Ahmad's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-900">
-  <!-- Header: Navigation bar -->
-  <header class="bg-white shadow">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">My Portfolio</h1>
-      <nav>
-        <ul class="flex space-x-6">
-          <li><a href="#home" class="hover:text-blue-500">Home</a></li>
-          <li><a href="#about" class="hover:text-blue-500">About</a></li>
-          <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
-          <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<body class="bg-gray-100 text-gray-900">
+    
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold">Ahmad's Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Hero Section: Welcoming message with background image -->
-  <section id="home" class="relative h-screen flex items-center justify-center text-center">
-    <!-- Background image overlay -->
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1920x1080');"></div>
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-    <!-- Content -->
-    <div class="relative z-10 text-white p-4">
-      <h2 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h2>
-      <p class="text-lg mb-6">I am a professional web developer with a passion for creating modern and responsive designs.</p>
-      <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
-        View Projects
-      </a>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex flex-col items-center justify-center bg-cover bg-center text-center" style="background-image: url('background.jpg');">
+        <h2 class="text-4xl font-bold text-white">Welcome to My Portfolio</h2>
+        <p class="text-white mt-2">Backend Developer | ERP Consultant | Tester</p>
+        <a href="#projects" class="mt-4 bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-600">View Projects</a>
+    </section>
 
-  <!-- About Section: Biography with professional photo -->
-  <section id="about" class="container mx-auto px-4 py-16">
-    <div class="flex flex-col md:flex-row items-center">
-      <!-- Professional photo -->
-      <div class="md:w-1/3 mb-6 md:mb-0">
-        <img src="https://via.placeholder.com/300" alt="Professional Photo" class="rounded-full shadow-lg">
-      </div>
-      <!-- Biography and skills -->
-      <div class="md:w-2/3 md:pl-10">
-        <h3 class="text-3xl font-bold mb-4">About Me</h3>
-        <p class="mb-4">
-          I have extensive experience in web development, specializing in building responsive and accessible websites using modern technologies such as HTML, CSS, and Tailwind CSS.
-        </p>
-        <h4 class="text-xl font-semibold mb-2">Skills</h4>
-        <ul class="list-disc list-inside">
-          <li>HTML, CSS, JavaScript</li>
-          <li>Responsive Design & Mobile Development</li>
-          <li>Tailwind CSS & Bootstrap</li>
-          <li>React & Vue.js</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="container mx-auto py-16 px-4">
+        <h2 class="text-3xl font-bold text-center mb-6">About Me</h2>
+        <div class="flex flex-col md:flex-row items-center">
+            <img src="profile.jpg" alt="Ahmad's Photo" class="w-40 h-40 rounded-full mb-4 md:mb-0 md:mr-6">
+            <p class="text-lg">I am an experienced ERP Technical Consultant, Backend Developer, and Tester with expertise in automation tools and testing frameworks. Passionate about creating efficient, scalable solutions.</p>
+        </div>
+    </section>
 
-  <!-- Projects Section: Grid layout for showcasing projects -->
-  <section id="projects" class="bg-gray-100 py-16">
-    <div class="container mx-auto px-4">
-      <h3 class="text-3xl font-bold text-center mb-12">My Projects</h3>
-      <div class="grid gap-8 md:grid-cols-3">
-        <!-- Project 1 -->
-        <div class="bg-white rounded-lg shadow overflow-hidden">
-          <img src="https://via.placeholder.com/600x400" alt="Project 1" class="w-full">
-          <div class="p-6">
-            <h4 class="text-xl font-bold mb-2">Project One</h4>
-            <p class="mb-4">A brief description of Project One highlighting its features and technologies used.</p>
-            <div class="flex space-x-4">
-              <a href="#" class="text-blue-500 hover:underline">Live Demo</a>
-              <a href="#" class="text-blue-500 hover:underline">GitHub</a>
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-200 py-16">
+        <h2 class="text-3xl font-bold text-center mb-6">Projects</h2>
+        <div class="container mx-auto grid md:grid-cols-3 gap-6 px-4">
+            <!-- Project 1 -->
+            <div class="bg-white shadow-md p-4 rounded-lg">
+                <img src="project1.jpg" alt="Project 1" class="w-full rounded">
+                <h3 class="text-xl font-semibold mt-2">Project 1</h3>
+                <p class="text-gray-600">Brief description of the project.</p>
+                <a href="#" class="text-blue-500 hover:underline">View Project</a>
             </div>
-          </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="bg-white rounded-lg shadow overflow-hidden">
-          <img src="https://via.placeholder.com/600x400" alt="Project 2" class="w-full">
-          <div class="p-6">
-            <h4 class="text-xl font-bold mb-2">Project Two</h4>
-            <p class="mb-4">A brief description of Project Two highlighting its features and technologies used.</p>
-            <div class="flex space-x-4">
-              <a href="#" class="text-blue-500 hover:underline">Live Demo</a>
-              <a href="#" class="text-blue-500 hover:underline">GitHub</a>
+            <!-- Project 2 -->
+            <div class="bg-white shadow-md p-4 rounded-lg">
+                <img src="project2.jpg" alt="Project 2" class="w-full rounded">
+                <h3 class="text-xl font-semibold mt-2">Project 2</h3>
+                <p class="text-gray-600">Brief description of the project.</p>
+                <a href="#" class="text-blue-500 hover:underline">View Project</a>
             </div>
-          </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="bg-white rounded-lg shadow overflow-hidden">
-          <img src="https://via.placeholder.com/600x400" alt="Project 3" class="w-full">
-          <div class="p-6">
-            <h4 class="text-xl font-bold mb-2">Project Three</h4>
-            <p class="mb-4">A brief description of Project Three highlighting its features and technologies used.</p>
-            <div class="flex space-x-4">
-              <a href="#" class="text-blue-500 hover:underline">Live Demo</a>
-              <a href="#" class="text-blue-500 hover:underline">GitHub</a>
+            <!-- Project 3 -->
+            <div class="bg-white shadow-md p-4 rounded-lg">
+                <img src="project3.jpg" alt="Project 3" class="w-full rounded">
+                <h3 class="text-xl font-semibold mt-2">Project 3</h3>
+                <p class="text-gray-600">Brief description of the project.</p>
+                <a href="#" class="text-blue-500 hover:underline">View Project</a>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section: Contact form and social media links -->
-  <section id="contact" class="container mx-auto px-4 py-16">
-    <h3 class="text-3xl font-bold text-center mb-8">Contact Me</h3>
-    <div class="max-w-lg mx-auto">
-      <form action="#" method="POST" class="bg-white shadow-md rounded px-8 py-8 mb-4">
-        <!-- Name field -->
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
-        </div>
-        <!-- Email field -->
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
-        </div>
-        <!-- Message field -->
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Your message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required></textarea>
-        </div>
-        <!-- Submit button -->
-        <div class="flex items-center justify-between">
-          <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-            Send Message
-          </button>
-        </div>
-      </form>
-      <!-- Social Media Links -->
-      <div class="text-center">
-        <p class="mb-2">Connect with me:</p>
-        <div class="flex justify-center space-x-4">
-          <a href="#" class="text-blue-500 hover:text-blue-700">LinkedIn</a>
-          <a href="#" class="text-gray-800 hover:text-gray-600">GitHub</a>
-          <!-- Add additional social links as needed -->
-        </div>
-      </div>
-    </div>
-  </s
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto py-16 px-4">
+        <h2 class="text-3xl font-bold text-center mb-6">Contact Me</h2>
+        <form class="max-w-lg mx-auto bg-white shadow-md p-6 rounded-lg">
+            <input type="text" placeholder="Your Name" class="w-full p-2 mb-4 border rounded">
+            <input type="email" placeholder="Your Email" class="w-full p-2 mb-4 border rounded">
+            <textarea placeholder="Your Message" class="w-full p-2 mb-4 border rounded"></textarea>
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center p-4">
+        <p>&copy; 2025 Ahmad. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
