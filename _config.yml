@@ -1,0 +1,4 @@
+theme: jekyll-theme-minimal  # or another theme
+sass:
+  sass_dir: assets/css
+  style: compressed
