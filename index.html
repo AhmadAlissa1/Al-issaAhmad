@@ -248,12 +248,12 @@
           </p>
         </div>
         <!-- View More Details Button -->
-        <a href="#" id="toggleDetailsBtn"
+        <a href="#" id="toggleDetailsBtn4"
           class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
           More Details</a>
 
         <!-- Hidden Detailed Content -->
-        <div id="moreDetails" class="mt-6 space-y-6 text-lg hidden">
+        <div id="moreDetails4" class="mt-6 space-y-6 text-lg hidden">
           <!-- Overview -->
           <div>
             <h5 class="text-2xl font-bold mb-2">Overview</h5>
@@ -319,10 +319,10 @@
             serialized and non-serialized components while ensuring precise inventory adjustments.
           </p>
         </div>
-        <a href="#" id="toggleDetailsBtn"
+        <a href="#" id="toggleDetailsBtn5"
           class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
           More Details</a>
-        <div id="moreDetails" class="mt-6 space-y-6 text-lg hidden">
+        <div id="moreDetails5" class="mt-6 space-y-6 text-lg hidden">
           <!-- Detailed content for Disassembly Item -->
           <div>
             <h5 class="text-2xl font-bold mb-2">Overview</h5>
@@ -379,10 +379,10 @@
             invoice submission and validation, enhancing financial compliance and operational efficiency.
           </p>
         </div>
-        <a href="#" id="toggleDetailsBtn"
+        <a href="#" id="toggleDetailsBtn6"
           class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
           More Details</a>
-        <div id="moreDetails" class="mt-6 space-y-6 text-lg hidden">
+        <div id="moreDetails6" class="mt-6 space-y-6 text-lg hidden">
           <!-- Detailed content for Integration with IRBM -->
           <div>
             <h5 class="text-2xl font-bold mb-2">Overview</h5>
@@ -441,10 +441,10 @@
             FreeMaker.
           </p>
         </div>
-        <a href="#" id="toggleDetailsBtn"
+        <a href="#" id="toggleDetailsBtn7"
           class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
           More Details</a>
-        <div id="moreDetails" class="mt-6 space-y-6 text-lg hidden">
+        <div id="moreDetails7" class="mt-6 space-y-6 text-lg hidden">
           <!-- Detailed content for EFT Customization -->
           <div>
             <h5 class="text-2xl font-bold mb-2">Overview</h5>
@@ -493,10 +493,10 @@
             and a comprehensive audit trail in rapidly changing market conditions.
           </p>
         </div>
-        <a href="#" id="toggleDetailsBtn"
+        <a href="#" id="toggleDetailsBtn8"
           class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
           More Details</a>
-        <div id="moreDetails" class="mt-6 space-y-6 text-lg hidden">
+        <div id="moreDetails8" class="mt-6 space-y-6 text-lg hidden">
           <!-- Detailed content for Price Log Change for Item -->
           <div>
             <h5 class="text-2xl font-bold mb-2">Overview</h5>
@@ -546,10 +546,10 @@
             preventing duplicates and ensuring product integrity.
           </p>
         </div>
-        <a href="#" id="toggleDetailsBtn"
+        <a href="#" id="toggleDetailsBtn9"
           class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
           More Details</a>
-        <div id="moreDetails" class="mt-6 space-y-6 text-lg hidden">
+        <div id="moreDetails9" class="mt-6 space-y-6 text-lg hidden">
           <!-- Detailed content for Warranty Check -->
           <div>
             <h5 class="text-2xl font-bold mb-2">Overview</h5>
@@ -653,15 +653,19 @@
         appearOnScroll.observe(fader);
       });
 
-      // Prevent navigation on project links and show alert instead
+      // Handle project details toggle buttons
       const projectLinks = document.querySelectorAll('.project-link');
       projectLinks.forEach(link => {
         link.addEventListener('click', (e) => {
           e.preventDefault();
-
-          // Check if this is the "View More Details" button
-          if (link.id === 'toggleDetailsBtn') {
-            const detailsSection = document.getElementById('moreDetails');
+          
+          // Find the parent tab content and the details section within it
+          const tabContent = link.closest('.tab-content');
+          const projectId = tabContent.id.replace('project', '');
+          const detailsSection = document.getElementById('moreDetails' + projectId);
+          
+          // Toggle visibility and button text
+          if (detailsSection) {
             detailsSection.classList.toggle('hidden');
             link.textContent = detailsSection.classList.contains('hidden') ? 'View More Details' : 'Hide Details';
           } else {
