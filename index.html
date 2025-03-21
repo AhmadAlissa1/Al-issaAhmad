@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Add Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     html {
       scroll-behavior: smooth;
@@ -106,7 +108,7 @@
   <!-- Hero Section -->
   <section id="home" class="fade-in relative h-screen flex items-center justify-center text-center">
     <div class="absolute inset-0 bg-gradient-to-r from-blue-900 via-indigo-800 to-purple-900"></div>
-    <div class="absolute inset-0 opacity-15" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'%3E%3Cg fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.12\'%3E%3Cpath opacity=\'.5\' d=\'M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')"></div>
+    <div class="absolute inset-0 opacity-15" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'%3E%3Cg fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.12\'%3E%3Cpath opacity=\'.5\' d=\'M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')"></div>
     <div class="absolute inset-0 bg-black opacity-30"></div>
     <div class="relative z-10 text-white px-4">
       <h2 class="text-5xl font-bold mb-6 text-white drop-shadow-lg">Welcome to My Profile</h2>
@@ -122,8 +124,11 @@
   <section id="about" class="fade-in container mx-auto px-6 py-16">
     <div class="flex flex-col md:flex-row items-center">
       <div class="w-full md:w-1/3 mb-8 md:mb-0">
-        <!-- Using the local image me.jpg -->
-        <img src="me.jpg" alt="Profile Picture" class="rounded-full shadow-lg" />
+        <!-- Enhanced profile image styling -->
+        <div class="relative mx-auto w-64 h-64 md:w-80 md:h-80">
+          <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 animate-pulse"></div>
+          <img src="me.jpg" alt="Profile Picture" class="relative rounded-full shadow-xl border-4 border-white object-cover w-full h-full transform hover:scale-105 transition-transform duration-300" />
+        </div>
       </div>
       <div class="w-full md:w-2/3 md:pl-12">
         <h3 class="text-4xl font-bold mb-4">About Me</h3>
@@ -216,29 +221,31 @@
     <div class="max-w-4xl mx-auto">
       <div class="tab-navigation">
         <button class="tab-button active" data-tab="project4">
-          Serial Number Customization
+          <i class="fas fa-barcode mr-2"></i> Serial Number Customization
         </button>
         <button class="tab-button" data-tab="project5">
-          Disassembly Item
+          <i class="fas fa-tools mr-2"></i> Disassembly Item
         </button>
         <button class="tab-button" data-tab="project6">
-          Integration with IRBM
+          <i class="fas fa-exchange-alt mr-2"></i> Integration with IRBM
         </button>
         <button class="tab-button" data-tab="project7">
-          EFT Customization
+          <i class="fas fa-credit-card mr-2"></i> EFT Customization
         </button>
         <button class="tab-button" data-tab="project8">
-          Price Log Change
+          <i class="fas fa-tags mr-2"></i> Price Log Change
         </button>
         <button class="tab-button" data-tab="project9">
-          Warranty Check
+          <i class="fas fa-shield-alt mr-2"></i> Warranty Check
         </button>
+      
       </div>
 
       <!-- Serial Number Customization -->
       <div id="project4" class="tab-content active">
-        <h4 class="text-3xl font-bold mb-4">Serial Number Customization</h4>
-        <!-- Brief Description -->
+        <h4 class="text-3xl font-bold mb-4 flex items-center">
+          <i class="fas fa-barcode text-blue-600 mr-3"></i> Serial Number Customization
+        </h4>
         <div class="space-y-6 text-lg">
           <p>
             This project revolutionizes inventory management by streamlining the bulk submission of serial numbers
@@ -246,11 +253,12 @@
             tracking.
           </p>
         </div>
+        
         <!-- View More Details Button -->
         <a href="#" id="toggleDetailsBtn4"
-          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-full text-lg inline-block mt-6 font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">View
           More Details</a>
-
+      
         <!-- Hidden Detailed Content -->
         <div id="moreDetails4" class="mt-6 space-y-6 text-lg hidden">
           <!-- Overview -->
@@ -262,16 +270,314 @@
               method.
             </p>
           </div>
+          
+          <!-- Visual Demonstration -->
+          <div>
+            <h5 class="text-2xl font-bold mb-4">Visual Demonstration</h5>
+            
+            <!-- Project Visual Mockup -->
+            <div class="bg-white shadow-lg rounded-lg p-4 mb-6 border border-gray-200">
+              <div class="flex flex-col md:flex-row">
+                <div class="w-full md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-4 rounded-lg">
+                    <div class="font-mono text-sm mb-2 text-gray-600">// Item Receipt UI</div>
+                    <div class="bg-blue-100 text-blue-800 p-2 rounded mb-3 font-semibold">Assign Serial Numbers</div>
+                    <div class="bg-white border border-gray-300 p-3 rounded mb-2">
+                      <div class="flex justify-between mb-2">
+                        <span class="text-gray-700 font-semibold">Item:</span>
+                        <span class="text-gray-700">Laptop Model XYZ</span>
+                      </div>
+                      <div class="flex justify-between mb-2">
+                        <span class="text-gray-700 font-semibold">Quantity:</span>
+                        <span class="text-gray-700">15</span>
+                      </div>
+                      <div class="mt-3 text-sm text-gray-600">Enter Serial Numbers (one per line):</div>
+                      <div class="bg-gray-50 border border-gray-300 p-2 rounded font-mono text-xs mt-1 h-20">
+                        LT-2023-001<br>
+                        LT-2023-002<br>
+                        LT-2023-003<br>
+                        ...
+                      </div>
+                    </div>
+                    <div class="flex justify-between">
+                      <div class="bg-gray-500 text-white px-4 py-1 rounded font-semibold text-sm">Cancel</div>
+                      <div class="bg-blue-600 text-white px-4 py-1 rounded font-semibold text-sm">Save</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-4 rounded-lg">
+                    <div class="font-mono text-sm mb-2 text-gray-600">// Delivery Order UI</div>
+                    <div class="bg-green-100 text-green-800 p-2 rounded mb-3 font-semibold">Auto-Select Serial Numbers (FIFO)</div>
+                    <div class="bg-white border border-gray-300 p-3 rounded mb-2">
+                      <div class="flex justify-between mb-2">
+                        <span class="text-gray-700 font-semibold">Item:</span>
+                        <span class="text-gray-700">Laptop Model XYZ</span>
+                      </div>
+                      <div class="flex justify-between mb-2">
+                        <span class="text-gray-700 font-semibold">Quantity:</span>
+                        <span class="text-gray-700">5</span>
+                      </div>
+                      <div class="mt-3 text-sm text-gray-600">Selected Serial Numbers:</div>
+                      <div class="bg-gray-50 border border-gray-300 p-2 rounded font-mono text-xs mt-1">
+                        <div class="flex items-center mb-1">
+                          <i class="fas fa-check-circle text-green-500 mr-1"></i> LT-2023-001 <span class="ml-auto text-gray-500">(Oldest)</span>
+                        </div>
+                        <div class="flex items-center mb-1">
+                          <i class="fas fa-check-circle text-green-500 mr-1"></i> LT-2023-002
+                        </div>
+                        <div class="flex items-center mb-1">
+                          <i class="fas fa-check-circle text-green-500 mr-1"></i> LT-2023-003
+                        </div>
+                        <div class="flex items-center mb-1">
+                          <i class="fas fa-check-circle text-green-500 mr-1"></i> LT-2023-004
+                        </div>
+                        <div class="flex items-center">
+                          <i class="fas fa-check-circle text-green-500 mr-1"></i> LT-2023-005
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex justify-between">
+                      <div class="bg-gray-500 text-white px-4 py-1 rounded font-semibold text-sm">Back</div>
+                      <div class="bg-green-600 text-white px-4 py-1 rounded font-semibold text-sm">Confirm</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Additional Visualization -->
+            <div class="bg-white shadow-lg rounded-lg p-4 border border-gray-200">
+              <h6 class="text-xl font-bold mb-3">FIFO Serial Number Selection Process</h6>
+              <div class="flex flex-col md:flex-row">
+                <div class="w-full md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-4 rounded-lg">
+                    <div class="font-mono text-sm mb-2 text-gray-600">// Inventory Database</div>
+                    <div class="bg-blue-100 text-blue-800 p-2 rounded mb-3 font-semibold">Available Serial Numbers</div>
+                    <div class="bg-white border border-gray-300 p-3 rounded mb-2">
+                      <table class="min-w-full text-sm">
+                        <thead class="bg-gray-50">
+                          <tr>
+                            <th class="p-2 text-left">Serial #</th>
+                            <th class="p-2 text-left">Date Added</th>
+                            <th class="p-2 text-left">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody class="font-mono text-xs">
+                          <tr class="border-t border-gray-200 bg-green-50">
+                            <td class="p-2">LT-2023-001</td>
+                            <td class="p-2">2023-01-15</td>
+                            <td class="p-2"><span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full text-xs">Selected</span></td>
+                          </tr>
+                          <tr class="border-t border-gray-200 bg-green-50">
+                            <td class="p-2">LT-2023-002</td>
+                            <td class="p-2">2023-01-15</td>
+                            <td class="p-2"><span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full text-xs">Selected</span></td>
+                          </tr>
+                          <tr class="border-t border-gray-200 bg-green-50">
+                            <td class="p-2">LT-2023-003</td>
+                            <td class="p-2">2023-01-15</td>
+                            <td class="p-2"><span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full text-xs">Selected</span></td>
+                          </tr>
+                          <tr class="border-t border-gray-200 bg-green-50">
+                            <td class="p-2">LT-2023-004</td>
+                            <td class="p-2">2023-01-20</td>
+                            <td class="p-2"><span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full text-xs">Selected</span></td>
+                          </tr>
+                          <tr class="border-t border-gray-200 bg-green-50">
+                            <td class="p-2">LT-2023-005</td>
+                            <td class="p-2">2023-01-20</td>
+                            <td class="p-2"><span class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full text-xs">Selected</span></td>
+                          </tr>
+                          <tr class="border-t border-gray-200">
+                            <td class="p-2">LT-2023-006</td>
+                            <td class="p-2">2023-02-05</td>
+                            <td class="p-2"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full text-xs">Available</span></td>
+                          </tr>
+                          <tr class="border-t border-gray-200">
+                            <td class="p-2">LT-2023-007</td>
+                            <td class="p-2">2023-02-05</td>
+                            <td class="p-2"><span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full text-xs">Available</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-4 rounded-lg">
+                    <div class="font-mono text-sm mb-2 text-gray-600">// System Logic</div>
+                    <div class="bg-blue-100 text-blue-800 p-2 rounded mb-3 font-semibold">FIFO Selection Algorithm</div>
+                    <div class="bg-gray-900 text-green-400 p-3 rounded font-mono text-xs" style="min-height: 250px;">
+                      <div class="mb-2">// Pseudo code for serial number selection</div>
+                      <div class="mb-1">function selectSerialNumbers(item, quantity) {</div>
+                      <div class="ml-4 mb-1">// Get all available serial numbers for item</div>
+                      <div class="ml-4 mb-1">let available = getAvailableSerialNumbers(item);</div>
+                      <div class="ml-4 mb-1">&nbsp;</div>
+                      <div class="ml-4 mb-1">// Sort by date added (oldest first)</div>
+                      <div class="ml-4 mb-1">available.sort((a, b) => a.dateAdded - b.dateAdded);</div>
+                      <div class="ml-4 mb-1">&nbsp;</div>
+                      <div class="ml-4 mb-1">// Select the first 'quantity' serial numbers</div>
+                      <div class="ml-4 mb-1">let selected = available.slice(0, quantity);</div>
+                      <div class="ml-4 mb-1">&nbsp;</div>
+                      <div class="ml-4 mb-1">// Mark the selected ones in the system</div>
+                      <div class="ml-4 mb-1">for (let sn of selected) {</div>
+                      <div class="ml-8 mb-1">markAsSelected(sn.serialNumber);</div>
+                      <div class="ml-4 mb-1">}</div>
+                      <div class="ml-4 mb-1">&nbsp;</div>
+                      <div class="ml-4 mb-1">return selected;</div>
+                      <div class="mb-1">}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-white p-4 rounded-lg border border-gray-200">
+                <h6 class="text-lg font-bold mb-3">Key Features</h6>
+                <ul class="space-y-2">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-sm">Automatic FIFO serial number selection</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-sm">Comprehensive transaction history tracking</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-sm">Multi-channel serial number visibility</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-sm">Integrated analytics and insights</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="bg-white p-4 rounded-lg border border-gray-200">
+                <h6 class="text-lg font-bold mb-3">System Benefits</h6>
+                <ul class="space-y-2">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-sm">Enhanced inventory accuracy and control</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-sm">Improved tracking for warranty and service</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-sm">Streamlined order fulfillment process</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    <span class="text-sm">Better visibility across sales channels</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
           <!-- Key Objectives -->
           <div>
             <h5 class="text-2xl font-bold mb-2">Key Objectives</h5>
             <ul class="list-disc ml-6">
-              <li>Streamline data entry by supporting bulk submission during IR.</li>
-              <li>Ensure accurate tracking with FIFO-based serial number selection during DO.</li>
-              <li>Reduce manual errors and processing time.</li>
-              <li>Improve inventory traceability and operational efficiency.</li>
+              <li>Extend NetSuite's native serial number tracking functionality</li>
+              <li>Provide enhanced visibility of serial numbers across multiple sales channels</li>
+              <li>Implement FIFO-based serial number selection to optimize inventory management</li>
+              <li>Enable comprehensive transaction history for each serialized inventory item</li>
+              <li>Deliver analytics and insights on serialized inventory movements</li>
             </ul>
           </div>
+          
+          <!-- Process Flowchart -->
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Process Flowchart</h5>
+            <div class="bg-white shadow rounded-lg p-4 border border-gray-200">
+              <div class="flex justify-center">
+                <div class="w-full max-w-3xl">
+                  <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="flex flex-col items-center">
+                      <!-- Flowchart structure -->
+                      <div class="flex flex-col items-center">
+                        <!-- Start node -->
+                        <div class="bg-blue-500 text-white px-4 py-2 rounded-full mb-4">Start</div>
+                        
+                        <!-- Arrow down -->
+                        <div class="h-8 w-0.5 bg-gray-400"></div>
+                        
+                        <!-- Item Receipt Process -->
+                        <div class="bg-blue-100 border border-blue-300 rounded-lg p-3 mb-4 w-64 text-center">
+                          <div class="font-semibold text-blue-800">Item Receipt</div>
+                          <div class="text-xs text-gray-600">Receive serialized inventory</div>
+                        </div>
+                        
+                        <!-- Arrow down -->
+                        <div class="h-8 w-0.5 bg-gray-400"></div>
+                        
+                        <!-- Assign Serial Numbers -->
+                        <div class="bg-green-100 border border-green-300 rounded-lg p-3 mb-4 w-64 text-center">
+                          <div class="font-semibold text-green-800">Assign Serial Numbers</div>
+                          <div class="text-xs text-gray-600">Enter serial numbers for items</div>
+                        </div>
+                        
+                        <!-- Arrow down -->
+                        <div class="h-8 w-0.5 bg-gray-400"></div>
+                        
+                        <!-- Sales Order Creation -->
+                        <div class="bg-purple-100 border border-purple-300 rounded-lg p-3 mb-4 w-64 text-center">
+                          <div class="font-semibold text-purple-800">Sales Order</div>
+                          <div class="text-xs text-gray-600">Create order for serialized items</div>
+                        </div>
+                        
+                        <!-- Arrow down -->
+                        <div class="h-8 w-0.5 bg-gray-400"></div>
+                        
+                        <!-- FIFO Serial Number Selection -->
+                        <div class="bg-orange-100 border border-orange-300 rounded-lg p-3 mb-4 w-64 text-center">
+                          <div class="font-semibold text-orange-800">FIFO Selection</div>
+                          <div class="text-xs text-gray-600">System auto-selects serial numbers by FIFO</div>
+                        </div>
+                        
+                        <!-- Arrow down -->
+                        <div class="h-8 w-0.5 bg-gray-400"></div>
+                        
+                        <!-- Fulfillment and Tracking -->
+                        <div class="bg-indigo-100 border border-indigo-300 rounded-lg p-3 mb-4 w-64 text-center">
+                          <div class="font-semibold text-indigo-800">Fulfillment & Tracking</div>
+                          <div class="text-xs text-gray-600">Complete order with serial number tracking</div>
+                        </div>
+                        
+                        <!-- Arrow down -->
+                        <div class="h-8 w-0.5 bg-gray-400"></div>
+                        
+                        <!-- End node -->
+                        <div class="bg-blue-500 text-white px-4 py-2 rounded-full">End</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <!-- Detailed System Functionality -->
           <div>
             <h5 class="text-2xl font-bold mb-2">Detailed System Functionality</h5>
@@ -295,6 +601,7 @@
               </li>
             </ul>
           </div>
+          
           <!-- Benefits -->
           <div>
             <h5 class="text-2xl font-bold mb-2">Benefits</h5>
@@ -307,20 +614,23 @@
           </div>
         </div>
       </div>
-
-      <!-- Other Projects -->
       <!-- Disassembly Item (project5) -->
       <div id="project5" class="tab-content">
-        <h4 class="text-3xl font-bold mb-4">Disassembly Item</h4>
+        <h4 class="text-3xl font-bold mb-4 flex items-center">
+          <i class="fas fa-tools text-blue-600 mr-3"></i> Disassembly Item
+        </h4>
         <div class="space-y-6 text-lg">
           <p>
             Transforming product lifecycle management, this solution automates the breakdown of disassembled items into
             serialized and non-serialized components while ensuring precise inventory adjustments.
           </p>
         </div>
+        
         <a href="#" id="toggleDetailsBtn5"
-          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-full text-lg inline-block mt-6 font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">View
           More Details</a>
+
+        <!-- Hidden Detailed Content -->
         <div id="moreDetails5" class="mt-6 space-y-6 text-lg hidden">
           <!-- Detailed content for Disassembly Item -->
           <div>
@@ -330,6 +640,172 @@
               the corresponding quantities.
             </p>
           </div>
+          
+          <!-- Enhanced Visual Demonstration -->
+          <div>
+            <h5 class="text-2xl font-bold mb-4">Visual Demonstration</h5>
+            
+            <!-- Project Visual Mockup -->
+            <div class="bg-white shadow-lg rounded-lg p-4 mb-6 border border-gray-200">
+              <div class="flex flex-col md:flex-row">
+                <div class="w-full md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-4 rounded-lg">
+                    <div class="font-mono text-sm mb-2 text-gray-600">// Disassembly Record</div>
+                    <div class="bg-blue-100 text-blue-800 p-2 rounded mb-3 font-semibold">Create Disassembly Record</div>
+                    <div class="bg-white border border-gray-300 p-3 rounded mb-2">
+                      <div class="flex justify-between mb-2">
+                        <span class="text-gray-700 font-semibold">Main Item:</span>
+                        <span class="text-gray-700">Complete Desktop PC</span>
+                      </div>
+                      <div class="flex justify-between mb-2">
+                        <span class="text-gray-700 font-semibold">Serial No:</span>
+                        <span class="text-gray-700">PC-2023-A458</span>
+                      </div>
+                      <div class="flex justify-between mb-2">
+                        <span class="text-gray-700 font-semibold">Qty to Disassemble:</span>
+                        <span class="text-gray-700">1</span>
+                      </div>
+                      <div class="mt-3 text-sm text-gray-600 font-semibold">Components:</div>
+                      <div class="bg-gray-50 border border-gray-300 p-2 rounded font-mono text-xs mt-1">
+                        <div class="grid grid-cols-12 gap-1 text-gray-600 mb-2">
+                          <div class="col-span-5">Item</div>
+                          <div class="col-span-2">Qty</div>
+                          <div class="col-span-3">Serialized</div>
+                          <div class="col-span-2">Rate</div>
+                        </div>
+                        <div class="grid grid-cols-12 gap-1 mb-1">
+                          <div class="col-span-5">CPU</div>
+                          <div class="col-span-2">1</div>
+                          <div class="col-span-3">Yes</div>
+                          <div class="col-span-2">$250</div>
+                        </div>
+                        <div class="grid grid-cols-12 gap-1 mb-1">
+                          <div class="col-span-5">RAM</div>
+                          <div class="col-span-2">2</div>
+                          <div class="col-span-3">Yes</div>
+                          <div class="col-span-2">$120</div>
+                        </div>
+                        <div class="grid grid-cols-12 gap-1">
+                          <div class="col-span-5">Power Supply</div>
+                          <div class="col-span-2">1</div>
+                          <div class="col-span-3">No</div>
+                          <div class="col-span-2">$80</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex justify-end">
+                      <div class="bg-blue-600 text-white px-4 py-1 rounded font-semibold text-sm">Save Record</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-4 rounded-lg">
+                    <div class="font-mono text-sm mb-2 text-gray-600">// Disassembly Process</div>
+                    <div class="bg-green-100 text-green-800 p-2 rounded mb-3 font-semibold">Component Serial Numbers</div>
+                    <div class="bg-white border border-gray-300 p-3 rounded mb-2">
+                      <div class="flex justify-between mb-3">
+                        <span class="text-gray-700 font-semibold">Record No:</span>
+                        <span class="text-gray-700">#DI-5432</span>
+                      </div>
+                      <div class="bg-blue-50 p-2 rounded-lg mb-3">
+                        <div class="text-sm text-blue-800 font-semibold mb-1">CPU (Serial Number Required)</div>
+                        <input type="text" value="CPU-I7-7700K" class="w-full text-sm p-1 border border-gray-300 rounded" />
+                      </div>
+                      <div class="bg-blue-50 p-2 rounded-lg mb-3">
+                        <div class="text-sm text-blue-800 font-semibold mb-1">RAM #1 (Serial Number Required)</div>
+                        <input type="text" value="RAM-8GB-7234" class="w-full text-sm p-1 border border-gray-300 rounded" />
+                      </div>
+                      <div class="bg-blue-50 p-2 rounded-lg">
+                        <div class="text-sm text-blue-800 font-semibold mb-1">RAM #2 (Serial Number Required)</div>
+                        <input type="text" value="RAM-8GB-7235" class="w-full text-sm p-1 border border-gray-300 rounded" />
+                      </div>
+                    </div>
+                    <div class="flex justify-end">
+                      <div class="bg-green-600 text-white px-4 py-1 rounded font-semibold text-sm">Process Disassembly</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Enhanced Visualization - Inventory Impact -->
+            <div class="bg-white shadow-lg rounded-lg p-4 border border-gray-200">
+              <h6 class="text-xl font-bold mb-3">Inventory Impact Visualization</h6>
+              <div class="flex flex-col md:flex-row">
+                <div class="w-full md:w-1/3 p-4">
+                  <div class="bg-gray-100 p-4 rounded-lg">
+                    <div class="font-mono text-sm mb-2 text-gray-600">// Before Disassembly</div>
+                    <div class="bg-blue-100 text-blue-800 p-2 rounded mb-3 font-semibold">Inventory Status</div>
+                    <div class="bg-white border border-gray-300 p-3 rounded">
+                      <div class="flex flex-col">
+                        <div class="bg-blue-50 p-3 rounded-lg mb-3">
+                          <div class="text-center">
+                            <div class="font-semibold text-blue-800">Complete Desktop PC</div>
+                            <div class="font-mono text-sm mt-1">PC-2023-A458</div>
+                            <div class="mt-2 flex justify-center">
+                              <div class="bg-green-100 text-green-800 px-2 py-0.5 rounded-full text-xs">In Stock</div>
+                            </div>
+                            <div class="text-blue-800 font-semibold mt-2">Qty: 1</div>
+                            <div class="text-blue-800 mt-1">Value: $850</div>
+                          </div>
+                        </div>
+                        <div class="bg-gray-50 p-2 rounded-lg text-center text-gray-500 text-sm">
+                          No individual components in stock
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full md:w-1/3 p-4 flex items-center justify-center">
+                  <div class="text-center">
+                    <div class="text-lg font-semibold text-gray-700 mb-2">Disassembly Process</div>
+                    <div class="flex justify-center">
+                      <svg class="w-16 h-16 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
+                      </svg>
+                    </div>
+                    <div class="mt-2 text-sm text-gray-600">System automatically adjusts inventory</div>
+                  </div>
+                </div>
+                <div class="w-full md:w-1/3 p-4">
+                  <div class="bg-gray-100 p-4 rounded-lg">
+                    <div class="font-mono text-sm mb-2 text-gray-600">// After Disassembly</div>
+                    <div class="bg-green-100 text-green-800 p-2 rounded mb-3 font-semibold">Updated Inventory</div>
+                    <div class="bg-white border border-gray-300 p-3 rounded">
+                      <div class="flex flex-col">
+                        <div class="bg-red-50 p-2 rounded-lg mb-3 text-center">
+                          <div class="font-semibold text-red-800">Complete Desktop PC</div>
+                          <div class="mt-1 flex justify-center">
+                            <div class="bg-red-100 text-red-800 px-2 py-0.5 rounded-full text-xs">Removed</div>
+                          </div>
+                          <div class="text-red-800 font-semibold mt-1">Qty: 0</div>
+                        </div>
+                        <div class="text-center font-semibold text-gray-700 mb-2">New Components:</div>
+                        <div class="space-y-2">
+                          <div class="bg-green-50 p-2 rounded-lg">
+                            <div class="text-sm text-green-800 font-semibold">CPU (CPU-I7-7700K)</div>
+                            <div class="text-xs text-green-700">Qty: 1 · Value: $250</div>
+                          </div>
+                          <div class="bg-green-50 p-2 rounded-lg">
+                            <div class="text-sm text-green-800 font-semibold">RAM (2 units)</div>
+                            <div class="text-xs text-green-700">Value: $240</div>
+                          </div>
+                          <div class="bg-green-50 p-2 rounded-lg">
+                            <div class="text-sm text-green-800 font-semibold">Power Supply</div>
+                            <div class="text-xs text-green-700">Qty: 1 · Value: $80</div>
+                          </div>
+                        </div>
+                        <div class="mt-2 text-center text-sm text-gray-600">
+                          Total Value: $570
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <div>
             <h5 class="text-2xl font-bold mb-2">Key Objectives</h5>
             <ul class="list-disc ml-6">
@@ -367,20 +843,87 @@
               <li>Ensures traceability for both serialized and non-serialized components.</li>
             </ul>
           </div>
+          
+          <!-- Process Flowchart -->
+          <div>
+            <h5 class="text-2xl font-bold mb-2 mt-6">Process Flowchart</h5>
+            <div class="bg-white shadow rounded-lg p-4 border border-gray-200">
+              <div class="flex justify-center">
+                <div class="w-full max-w-3xl">
+                  <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="flex flex-col items-center">
+                      <!-- Flowchart structure -->
+                      <div class="flex flex-col items-center">
+                        <!-- Start node -->
+                        <div class="bg-blue-500 text-white px-4 py-2 rounded-full mb-4">Start</div>
+                        
+                        <!-- Arrow down -->
+                        <div class="h-8 w-0.5 bg-gray-400"></div>
+                        
+                        <!-- Create Disassembly Record -->
+                        <div class="bg-blue-100 border border-blue-300 rounded-lg p-3 mb-4 w-64 text-center">
+                          <div class="font-semibold text-blue-800">Create Disassembly Record</div>
+                          <div class="text-xs text-gray-600">Select main item to disassemble</div>
+                        </div>
+                        
+                        <!-- Arrow down -->
+                        <div class="h-8 w-0.5 bg-gray-400"></div>
+                        
+                        <!-- Add Components -->
+                        <div class="bg-green-100 border border-green-300 rounded-lg p-3 mb-4 w-64 text-center">
+                          <div class="font-semibold text-green-800">Add Components</div>
+                          <div class="text-xs text-gray-600">Specify components and their details</div>
+                        </div>
+                        
+                        <!-- Arrow down -->
+                        <div class="h-8 w-0.5 bg-gray-400"></div>
+                        
+                        <!-- Process Disassembly -->
+                        <div class="bg-purple-100 border border-purple-300 rounded-lg p-3 mb-4 w-64 text-center">
+                          <div class="font-semibold text-purple-800">Process Disassembly</div>
+                          <div class="text-xs text-gray-600">System processes the disassembly</div>
+                        </div>
+                        
+                        <!-- Arrow down -->
+                        <div class="h-8 w-0.5 bg-gray-400"></div>
+                        
+                        <!-- Inventory Adjustment -->
+                        <div class="bg-orange-100 border border-orange-300 rounded-lg p-3 mb-4 w-64 text-center">
+                          <div class="font-semibold text-orange-800">Inventory Adjustment</div>
+                          <div class="text-xs text-gray-600">System adjusts inventory automatically</div>
+                        </div>
+                        
+                        <!-- Arrow down -->
+                        <div class="h-8 w-0.5 bg-gray-400"></div>
+                        
+                        <!-- End node -->
+                        <div class="bg-blue-500 text-white px-4 py-2 rounded-full">End</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div id="project6" class="tab-content">
-        <h4 class="text-3xl font-bold mb-4">Integration with IRBM</h4>
+        <h4 class="text-3xl font-bold mb-4 flex items-center">
+          <i class="fas fa-exchange-alt text-blue-600 mr-3"></i> Integration with IRBM
+        </h4>
         <div class="space-y-6 text-lg">
           <p>
             Bridging the gap between systems, this integration seamlessly connects NetSuite with LHDN to automate
             invoice submission and validation, enhancing financial compliance and operational efficiency.
           </p>
         </div>
+        
         <a href="#" id="toggleDetailsBtn6"
-          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-full text-lg inline-block mt-6 font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">View
           More Details</a>
+
+        <!-- Hidden Detailed Content -->
         <div id="moreDetails6" class="mt-6 space-y-6 text-lg hidden">
           <!-- Detailed content for Integration with IRBM -->
           <div>
@@ -391,6 +934,215 @@
               near real-time feedback from LHDN.
             </p>
           </div>
+          
+          <!-- Enhanced Visual Demonstration -->
+          <div>
+            <h5 class="text-2xl font-bold mb-4">Visual Demonstration</h5>
+            
+            <!-- Project Visual Mockup -->
+            <div class="bg-white shadow-lg rounded-lg p-4 mb-6 border border-gray-200">
+              <div class="flex flex-col md:flex-row">
+                <div class="w-full md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-4 rounded-lg">
+                    <div class="font-mono text-sm mb-2 text-gray-600">// Invoice Submission Flow</div>
+                    <div class="bg-blue-100 text-blue-800 p-2 rounded mb-3 font-semibold">NetSuite to LHDN Integration</div>
+                    <div class="bg-white border border-gray-300 p-3 rounded mb-2">
+                      <div class="flex justify-between mb-2">
+                        <span class="text-gray-700 font-semibold">Document Type:</span>
+                        <span class="text-gray-700">Invoice</span>
+                      </div>
+                      <div class="flex justify-between mb-2">
+                        <span class="text-gray-700 font-semibold">Invoice #:</span>
+                        <span class="text-gray-700">INV-2023-8754</span>
+                      </div>
+                      <div class="flex justify-between mb-2">
+                        <span class="text-gray-700 font-semibold">Customer:</span>
+                        <span class="text-gray-700">Acme Corporation</span>
+                      </div>
+                      <div class="mt-3 text-sm text-gray-600 font-semibold">Line Items:</div>
+                      <div class="bg-gray-50 border border-gray-300 p-2 rounded font-mono text-xs mt-1">
+                        <div class="grid grid-cols-7 gap-1 text-gray-600 mb-2">
+                          <div class="col-span-3">Item</div>
+                          <div>Qty</div>
+                          <div>Rate</div>
+                          <div>Tax Code</div>
+                          <div>Amount</div>
+                        </div>
+                        <div class="grid grid-cols-7 gap-1 mb-1">
+                          <div class="col-span-3">Consulting Services</div>
+                          <div>10</div>
+                          <div>$150</div>
+                          <div>SR</div>
+                          <div>$1,500</div>
+                        </div>
+                        <div class="grid grid-cols-7 gap-1 mb-1">
+                          <div class="col-span-3">Software License</div>
+                          <div>1</div>
+                          <div>$2,000</div>
+                          <div>SR</div>
+                          <div>$2,000</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex justify-end">
+                      <div class="bg-blue-600 text-white px-4 py-1 rounded font-semibold text-sm">Submit to LHDN</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-4 rounded-lg">
+                    <div class="font-mono text-sm mb-2 text-gray-600">// Validation Results</div>
+                    <div class="bg-green-100 text-green-800 p-2 rounded mb-3 font-semibold">LHDN Response</div>
+                    <div class="bg-white border border-gray-300 p-3 rounded mb-2">
+                      <div class="flex justify-between mb-3">
+                        <span class="text-gray-700 font-semibold">Status:</span>
+                        <span class="text-green-600 font-semibold">Validated</span>
+                      </div>
+                      <div class="bg-green-50 border border-green-200 p-2 rounded mb-3">
+                        <div class="text-sm text-green-800">
+                          <span class="font-semibold">✓</span> Document format verified
+                        </div>
+                        <div class="text-sm text-green-800">
+                          <span class="font-semibold">✓</span> Tax calculation correct
+                        </div>
+                        <div class="text-sm text-green-800">
+                          <span class="font-semibold">✓</span> Customer details valid
+                        </div>
+                      </div>
+                      <div class="text-sm text-gray-600 mb-2 font-semibold">LHDN Reference:</div>
+                      <div class="bg-blue-50 p-2 rounded-lg">
+                        <div class="font-mono text-sm">LHDN-INV-46723859</div>
+                      </div>
+                    </div>
+                    <div class="flex justify-end space-x-2">
+                      <div class="bg-gray-500 text-white px-3 py-1 rounded font-semibold text-sm">Cancel Invoice</div>
+                      <div class="bg-green-600 text-white px-3 py-1 rounded font-semibold text-sm">Finalize & Save</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Enhanced Integration Workflow Diagram -->
+            <div class="bg-white shadow-lg rounded-lg p-4 border border-gray-200">
+              <h6 class="text-xl font-bold mb-3">Complete Integration Workflow</h6>
+              <div class="p-4">
+                <div class="flex flex-col md:flex-row items-center justify-center">
+                  <!-- NetSuite System -->
+                  <div class="w-full md:w-1/4 p-3">
+                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-200 flex flex-col items-center">
+                      <div class="text-lg font-semibold text-blue-800 mb-2">NetSuite ERP</div>
+                      <svg class="w-20 h-20 text-blue-600 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                      </svg>
+                      <div class="text-sm text-blue-700 text-center">Document Creation & Management</div>
+                    </div>
+                  </div>
+                  
+                  <!-- API Connection -->
+                  <div class="w-full md:w-1/6 p-3 flex justify-center items-center">
+                    <div class="flex flex-col items-center">
+                      <div class="text-gray-500 text-sm mb-1 text-center">API Connection</div>
+                      <svg class="w-16 h-10 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                  <!-- Integration Layer -->
+                  <div class="w-full md:w-1/4 p-3">
+                    <div class="bg-purple-50 p-4 rounded-lg border border-purple-200 flex flex-col items-center">
+                      <div class="text-lg font-semibold text-purple-800 mb-2">Integration Layer</div>
+                      <svg class="w-20 h-20 text-purple-600 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                      </svg>
+                      <div class="text-sm text-purple-700 text-center">Data Transformation & Validation</div>
+                    </div>
+                  </div>
+                  
+                  <!-- API Connection -->
+                  <div class="w-full md:w-1/6 p-3 flex justify-center items-center">
+                    <div class="flex flex-col items-center">
+                      <div class="text-gray-500 text-sm mb-1 text-center">API Connection</div>
+                      <svg class="w-16 h-10 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                  <!-- LHDN System -->
+                  <div class="w-full md:w-1/4 p-3">
+                    <div class="bg-green-50 p-4 rounded-lg border border-green-200 flex flex-col items-center">
+                      <div class="text-lg font-semibold text-green-800 mb-2">LHDN System</div>
+                      <svg class="w-20 h-20 text-green-600 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                      </svg>
+                      <div class="text-sm text-green-700 text-center">Document Processing & Verification</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Process Steps -->
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
+                    <div class="text-blue-800 font-semibold mb-2 flex items-center">
+                      <span class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-2">1</span>
+                      Document Creation
+                    </div>
+                    <p class="text-sm text-gray-600">
+                      Financial documents are created in NetSuite including invoices, credit memos, and debit notes
+                    </p>
+                  </div>
+                  <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
+                    <div class="text-blue-800 font-semibold mb-2 flex items-center">
+                      <span class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-2">2</span>
+                      Data Transformation
+                    </div>
+                    <p class="text-sm text-gray-600">
+                      Integration layer formats data according to LHDN specifications and prepares submission payload
+                    </p>
+                  </div>
+                  <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
+                    <div class="text-blue-800 font-semibold mb-2 flex items-center">
+                      <span class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-2">3</span>
+                      LHDN Submission
+                    </div>
+                    <p class="text-sm text-gray-600">
+                      Documents are securely transmitted to LHDN via API for verification and processing
+                    </p>
+                  </div>
+                  <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
+                    <div class="text-green-800 font-semibold mb-2 flex items-center">
+                      <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center mr-2">4</span>
+                      Response Handling
+                    </div>
+                    <p class="text-sm text-gray-600">
+                      System receives validation response from LHDN including status and reference codes
+                    </p>
+                  </div>
+                  <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
+                    <div class="text-green-800 font-semibold mb-2 flex items-center">
+                      <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center mr-2">5</span>
+                      User Notification
+                    </div>
+                    <p class="text-sm text-gray-600">
+                      Users are notified of validation results with actionable feedback for any issues
+                    </p>
+                  </div>
+                  <div class="bg-gray-50 p-3 rounded-lg border border-gray-200">
+                    <div class="text-green-800 font-semibold mb-2 flex items-center">
+                      <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center mr-2">6</span>
+                      Document Finalization
+                    </div>
+                    <p class="text-sm text-gray-600">
+                      Valid documents are finalized with LHDN reference numbers stored for audit purposes
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <div>
             <h5 class="text-2xl font-bold mb-2">Key Objectives</h5>
             <ul class="list-disc ml-6">
@@ -400,39 +1152,16 @@
               <li>Provide additional APIs to retrieve detailed status, notifications, and supplier invoice details.</li>
             </ul>
           </div>
-          <div>
-            <h5 class="text-2xl font-bold mb-2">Detailed System Functionality</h5>
-            <p class="mb-2"><strong>Invoice Generation & Submission:</strong></p>
-            <ul class="list-disc ml-6 mb-4">
-              <li>Users create invoices, credit memos, customer refunds, or debit notes within NetSuite.</li>
-              <li>Documents are automatically submitted to LHDN via an API call for validation.</li>
-            </ul>
-            <p class="mb-2"><strong>Real-Time Validation:</strong></p>
-            <ul class="list-disc ml-6 mb-4">
-              <li>The system retrieves validation results from LHDN in near real-time.</li>
-              <li>Validation feedback is presented to the user, highlighting any errors or required actions.</li>
-            </ul>
-            <p class="mb-2"><strong>Post-Validation Actions:</strong></p>
-            <ul class="list-disc ml-6">
-              <li>Users can cancel an invoice through a dedicated API request if errors are found or corrections are
-                needed.</li>
-              <li>Additional APIs allow for retrieving detailed invoice statuses, receiving notifications, and
-                processing supplier invoices.</li>
-            </ul>
-          </div>
-          <div>
-            <h5 class="text-2xl font-bold mb-2">Benefits</h5>
-            <ul class="list-disc ml-6">
-              <li>Enhances financial compliance by ensuring all documents adhere to LHDN regulations.</li>
-              <li>Reduces manual errors and accelerates the processing of financial transactions.</li>
-              <li>Provides real-time validation and actionable feedback, improving overall operational efficiency.</li>
-              <li>Supports additional functionalities via APIs for a comprehensive financial integration solution.</li>
-            </ul>
-          </div>
+          
+        
+                   
+                
         </div>
       </div>
       <div id="project7" class="tab-content">
-        <h4 class="text-3xl font-bold mb-4">EFT Customization</h4>
+        <h4 class="text-3xl font-bold mb-4 flex items-center">
+          <i class="fas fa-credit-card text-blue-600 mr-3"></i> EFT Customization
+        </h4>
         <div class="space-y-6 text-lg">
           <p>
             A tailored solution for financial operations, this project customizes EFT templates to meet the requirements
@@ -440,9 +1169,12 @@
             FreeMaker.
           </p>
         </div>
+        
         <a href="#" id="toggleDetailsBtn7"
-          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-full text-lg inline-block mt-6 font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">View
           More Details</a>
+
+        <!-- Hidden Detailed Content -->
         <div id="moreDetails7" class="mt-6 space-y-6 text-lg hidden">
           <!-- Detailed content for EFT Customization -->
           <div>
@@ -453,6 +1185,52 @@
               FreeMaker.
             </p>
           </div>
+          
+          <!-- Enhanced Visual Demonstration -->
+          <div>
+            <h5 class="text-2xl font-bold mb-4">Visual Demonstration</h5>
+            
+            <!-- Project Visual Mockup -->
+            <div class="bg-white shadow-lg rounded-lg p-4 mb-6 border border-gray-200">
+                
+                <div class="w-full md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-4 rounded-lg">
+                    <div class="font-mono text-sm mb-2 text-gray-600">// Generated XML Preview</div>
+                    <div class="bg-blue-100 text-blue-800 p-2 rounded mb-3 font-semibold">Payment File</div>
+                    <div class="bg-gray-900 text-green-400 p-3 rounded font-mono text-xs leading-relaxed overflow-x-auto">
+                      &lt;?xml version="1.0" encoding="UTF-8"?&gt;<br>
+                      &lt;EFTPayment&gt;<br>
+                      &nbsp;&nbsp;&lt;Header&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;SenderID&gt;COMPANY123&lt;/SenderID&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;Creation&gt;2023-08-15T09:30:47&lt;/Creation&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;MessageID&gt;MSG0001&lt;/MessageID&gt;<br>
+                      &nbsp;&nbsp;&lt;/Header&gt;<br>
+                      &nbsp;&nbsp;&lt;PaymentInfo&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;BatchID&gt;BAT20234567&lt;/BatchID&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;PaymentDate&gt;2023-08-20&lt;/PaymentDate&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;Currency&gt;JPY&lt;/Currency&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;TotalAmount&gt;250000&lt;/TotalAmount&gt;<br>
+                      &nbsp;&nbsp;&lt;/PaymentInfo&gt;<br>
+                      &nbsp;&nbsp;&lt;Transactions&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;Transaction&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;BeneficiaryName&gt;Supplier Co Ltd&lt;/BeneficiaryName&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;AccountNumber&gt;12345678&lt;/AccountNumber&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Amount&gt;150000&lt;/Amount&gt;<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/Transaction&gt;<br>
+                      &nbsp;&nbsp;&lt;/Transactions&gt;<br>
+                      &lt;/EFTPayment&gt;
+                    </div>
+                    <div class="flex justify-end mt-2">
+                      <div class="bg-blue-600 text-white px-4 py-1 rounded font-semibold text-sm">Generate Payment File</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Enhanced Bank Format Comparison -->
+           
+          
           <div>
             <h5 class="text-2xl font-bold mb-2">Key Objectives</h5>
             <ul class="list-disc ml-6">
@@ -485,16 +1263,21 @@
       </div>
       <!-- Price Log Change for Item (project8) -->
       <div id="project8" class="tab-content">
-        <h4 class="text-3xl font-bold mb-4">Price Log Change for Item</h4>
+        <h4 class="text-3xl font-bold mb-4 flex items-center">
+          <i class="fas fa-tags text-blue-600 mr-3"></i> Price Log Change for Item
+        </h4>
         <div class="space-y-6 text-lg">
           <p>
             This solution provides a dynamic system to record item pricing changes in real time, ensuring transparency
             and a comprehensive audit trail in rapidly changing market conditions.
           </p>
         </div>
+        
         <a href="#" id="toggleDetailsBtn8"
-          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-full text-lg inline-block mt-6 font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">View
           More Details</a>
+
+        <!-- Hidden Detailed Content -->
         <div id="moreDetails8" class="mt-6 space-y-6 text-lg hidden">
           <!-- Detailed content for Price Log Change for Item -->
           <div>
@@ -505,6 +1288,71 @@
               comprehensive report for audit and analysis purposes.
             </p>
           </div>
+          
+          <!-- Enhanced Visual Demonstration -->
+          <div>
+            <h5 class="text-2xl font-bold mb-4">Visual Demonstration</h5>
+            
+            <!-- Project Visual Mockup -->
+            <div class="bg-white shadow-lg rounded-lg p-4 mb-6 border border-gray-200">
+                   
+                
+                <div class="w-full md:w-1/2 p-4">
+                  <div class="bg-gray-100 p-4 rounded-lg h-full">
+                    <div class="font-mono text-sm mb-2 text-gray-600">// Price Change Log</div>
+                    <div class="bg-blue-100 text-blue-800 p-2 rounded mb-3 font-semibold">Historical Price Records</div>
+                    <div class="bg-white border border-gray-300 p-3 rounded">
+                      <div class="overflow-x-auto">
+                        <table class="min-w-full text-sm">
+                          <thead>
+                            <tr class="bg-gray-50 text-left">
+                              <th class="p-2 font-semibold">Date</th>
+                              <th class="p-2 font-semibold">Old Price</th>
+                              <th class="p-2 font-semibold">New Price</th>
+                              <th class="p-2 font-semibold">User</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="border-t border-gray-200">
+                              <td class="p-2">May 15, 2023</td>
+                              <td class="p-2">$1,199.99</td>
+                              <td class="p-2">$1,299.99</td>
+                              <td class="p-2">John Smith</td>
+                            </tr>
+                            <tr class="border-t border-gray-200 bg-blue-50">
+                              <td class="p-2">Mar 10, 2023</td>
+                              <td class="p-2">$1,249.99</td>
+                              <td class="p-2">$1,199.99</td>
+                              <td class="p-2">Maria Garcia</td>
+                            </tr>
+                            <tr class="border-t border-gray-200">
+                              <td class="p-2">Jan 05, 2023</td>
+                              <td class="p-2">$1,299.99</td>
+                              <td class="p-2">$1,249.99</td>
+                              <td class="p-2">Robert Chen</td>
+                            </tr>
+                            <tr class="border-t border-gray-200 bg-blue-50">
+                              <td class="p-2">Nov 20, 2022</td>
+                              <td class="p-2">$1,349.99</td>
+                              <td class="p-2">$1,299.99</td>
+                              <td class="p-2">Sarah Johnson</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="flex justify-between items-center mt-2 text-sm text-gray-600">
+                        <div>Showing 4 of 12 changes</div>
+                        <div class="flex space-x-2">
+                          <a href="#" class="text-blue-600 hover:underline">View All</a>
+                          <a href="#" class="text-blue-600 hover:underline">Export CSV</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           <div>
             <h5 class="text-2xl font-bold mb-2">Key Objectives</h5>
             <ul class="list-disc ml-6">
@@ -513,6 +1361,7 @@
               <li>Generate a detailed report for audit and pricing strategy review.</li>
             </ul>
           </div>
+          <!-- Detailed System Functionality -->
           <div>
             <h5 class="text-2xl font-bold mb-2">Detailed System Functionality</h5>
             <p class="mb-2"><strong>Change Logging:</strong></p>
@@ -537,61 +1386,273 @@
           </div>
         </div>
       </div>
-      <div id="project9" class="tab-content">
-        <h4 class="text-3xl font-bold mb-4">Warranty Check</h4>
-        <div class="space-y-6 text-lg">
-          <p>
-            Enhancing quality control, this tool verifies the uniqueness of serial numbers on invoices, effectively
-            preventing duplicates and ensuring product integrity.
-          </p>
-        </div>
-        <a href="#" id="toggleDetailsBtn9"
-          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
-          More Details</a>
-        <div id="moreDetails9" class="mt-6 space-y-6 text-lg hidden">
-          <!-- Detailed content for Warranty Check -->
-          <div>
-            <h5 class="text-2xl font-bold mb-2">Overview</h5>
-            <p>
-              This tool is designed to verify the uniqueness of serial numbers during invoice creation to prevent
-              duplicate warranty registrations. It ensures that each item is only registered once, maintaining accurate
-              product records.
-            </p>
+      
+<div id="project9" class="tab-content">
+  <h4 class="text-3xl font-bold mb-4 flex items-center">
+    <i class="fas fa-shield-alt text-blue-600 mr-3"></i> Warranty Check
+  </h4>
+  <div class="space-y-6 text-lg">
+    <p>
+      Enhancing quality control, this tool verifies the uniqueness of serial numbers on invoices, effectively
+      preventing duplicates and ensuring product integrity.
+    </p>
+  </div>
+  
+  <a href="#" id="toggleDetailsBtn9"
+    class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-full text-lg inline-block mt-6 font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">View
+    More Details</a>
+
+  <!-- Hidden Detailed Content -->
+  <div id="moreDetails9" class="mt-6 space-y-6 text-lg hidden">
+    <!-- Detailed content for Warranty Check -->
+    <div>
+      <h5 class="text-2xl font-bold mb-2">Overview</h5>
+      <p>
+        This tool is designed to verify the uniqueness of serial numbers during invoice creation to prevent
+        duplicate warranty registrations. It ensures that each item is only registered once, maintaining accurate
+        product records.
+      </p>
+    </div>
+    
+    <!-- Enhanced Visual Demonstration -->
+    <div>
+      <h5 class="text-2xl font-bold mb-4">Visual Demonstration</h5>
+      
+      <!-- Project Visual Mockup -->
+      <div class="bg-white shadow-lg rounded-lg p-4 mb-6 border border-gray-200">
+        <div class="flex flex-col md:flex-row">
+          <div class="w-full md:w-1/2 p-4">
+            <div class="bg-gray-100 p-4 rounded-lg h-full">
+              <div class="font-mono text-sm mb-2 text-gray-600">// Invoice Creation</div>
+              <div class="bg-blue-100 text-blue-800 p-2 rounded mb-3 font-semibold">Serial Number Entry</div>
+              <div class="bg-white border border-gray-300 p-3 rounded mb-3">
+                <div class="mb-3">
+                  <div class="text-gray-700 font-semibold mb-1">Customer:</div>
+                  <div class="bg-gray-50 p-2 rounded">
+                    <div class="text-gray-800">TechSphere Solutions</div>
+                    <div class="text-gray-600 text-sm">Account #: TSI-29845</div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="text-gray-700 font-semibold mb-1">Items:</div>
+                  <table class="min-w-full text-sm">
+                    <thead class="bg-gray-100">
+                      <tr>
+                        <th class="text-left p-2">Item</th>
+                        <th class="text-center p-2">Qty</th>
+                        <th class="text-left p-2">Serial #</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-t border-gray-200">
+                        <td class="p-2">Server X9</td>
+                        <td class="p-2 text-center">1</td>
+                        <td class="p-2">
+                          <input type="text" class="w-full p-1 border border-gray-300 rounded" value="SRV-X9-7842">
+                        </td>
+                      </tr>
+                      <tr class="border-t border-gray-200">
+                        <td class="p-2">Switch 24-Port</td>
+                        <td class="p-2 text-center">2</td>
+                        <td class="p-2">
+                          <input type="text" class="w-full p-1 border border-gray-300 rounded mb-1" value="NSW-24P-6723">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="flex justify-end">
+                <div class="bg-blue-600 text-white px-3 py-1 rounded font-semibold text-sm">Validate & Continue</div>
+              </div>
+            </div>
           </div>
-          <div>
-            <h5 class="text-2xl font-bold mb-2">Key Objectives</h5>
-            <ul class="list-disc ml-6">
-              <li>Check for items that have already been registered for warranty during invoice creation.</li>
-              <li>Alert the user if a duplicate serial number is detected.</li>
-              <li>Provide the option to continue with the invoice or cancel the action to avoid duplicate entries.</li>
-              <li>Enhance overall quality control and maintain product integrity.</li>
-            </ul>
-          </div>
-          <div>
-            <h5 class="text-2xl font-bold mb-2">Detailed System Functionality</h5>
-            <p class="mb-2"><strong>Warranty Verification:</strong></p>
-            <ul class="list-disc ml-6 mb-4">
-              <li>During invoice creation, the system cross-checks the serial numbers against the warranty registration
-                records.</li>
-              <li>If an item is found to be already registered, the system triggers an alert.</li>
-            </ul>
-            <p class="mb-2"><strong>User Alert & Decision:</strong></p>
-            <ul class="list-disc ml-6">
-              <li>The user receives an alert prompting them to decide whether to proceed with or cancel the invoice
-                process.</li>
-            </ul>
-          </div>
-          <div>
-            <h5 class="text-2xl font-bold mb-2">Benefits</h5>
-            <ul class="list-disc ml-6">
-              <li>Prevents duplicate warranty registrations, ensuring accurate product records.</li>
-              <li>Enhances quality control by catching potential errors early during invoice creation.</li>
-              <li>Maintains product integrity and builds customer trust through reliable record-keeping.</li>
-            </ul>
+          <div class="w-full md:w-1/2 p-4">
+            <div class="bg-gray-100 p-4 rounded-lg h-full">
+              <div class="font-mono text-sm mb-2 text-gray-600">// Warranty Alert</div>
+              <div class="bg-red-100 text-red-800 p-2 rounded mb-3 font-semibold">Duplicate Serial Number</div>
+              <div class="bg-white border border-red-300 p-3 rounded mb-3">
+                <div class="text-center mb-3">
+                  <svg class="w-14 h-14 text-red-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                  </svg>
+                </div>
+                <div class="bg-red-50 border border-red-200 p-3 rounded mb-3">
+                  <div class="text-red-800 font-semibold mb-2">Serial number already registered:</div>
+                  <div class="bg-white p-2 rounded border border-red-300 font-mono">
+                    SRV-X9-7842
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="text-gray-700 font-semibold mb-1">Registration Details:</div>
+                  <div class="bg-gray-50 p-2 rounded text-sm">
+                    <div class="grid grid-cols-2 gap-2">
+                      <div class="text-gray-600">Invoice:</div>
+                      <div>INV-78932</div>
+                      <div class="text-gray-600">Date:</div>
+                      <div>March 10, 2023</div>
+                      <div class="text-gray-600">Customer:</div>
+                      <div>Globex Corporation</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-end space-x-2">
+                <div class="bg-gray-500 text-white px-3 py-1 rounded font-semibold text-sm">Back</div>
+                <div class="bg-blue-600 text-white px-3 py-1 rounded font-semibold text-sm">Replace</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      
+      <!-- Enhanced Visualization - Warranty Check Process Flow -->
+      <div class="bg-white shadow-lg rounded-lg p-4 border border-gray-200">
+        <h6 class="text-xl font-bold mb-3">Warranty Check Process Flow</h6>
+        <div class="flex flex-col md:flex-row">
+          <div class="w-full p-4">
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+              <div class="relative">
+                <!-- Process Flow Diagram -->
+                <div class="flex flex-col items-center">
+                  <!-- Step 1 -->
+                  <div class="w-full max-w-md bg-blue-50 p-3 rounded-lg border border-blue-200 mb-8 relative">
+                    <div class="flex items-center">
+                      <div class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">1</div>
+                      <div>
+                        <div class="font-semibold text-blue-800">Serial Number Entry</div>
+                        <div class="text-sm text-blue-700">User enters serial numbers during invoice creation</div>
+                      </div>
+                    </div>
+                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full">
+                      <svg class="w-6 h-6 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                  <!-- Step 2 -->
+                  <div class="w-full max-w-md bg-purple-50 p-3 rounded-lg border border-purple-200 mb-8 relative">
+                    <div class="flex items-center">
+                      <div class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">2</div>
+                      <div>
+                        <div class="font-semibold text-purple-800">Database Validation</div>
+                        <div class="text-sm text-purple-700">System cross-checks against warranty registration records</div>
+                      </div>
+                    </div>
+                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full">
+                      <svg class="w-6 h-6 text-purple-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                  <!-- Step 3 - Decision -->
+                  <div class="w-full max-w-md bg-yellow-50 p-3 rounded-lg border border-yellow-200 mb-10 relative">
+                    <div class="flex items-center">
+                      <div class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">3</div>
+                      <div>
+                        <div class="font-semibold text-yellow-800">Decision Point</div>
+                        <div class="text-sm text-yellow-700">Is the serial number already registered?</div>
+                      </div>
+                    </div>
+                    <div class="absolute bottom-0 left-1/4 transform -translate-x-1/2 translate-y-3/4 rotate-45">
+                      <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                      </svg>
+                    </div>
+                    <div class="absolute bottom-0 left-3/4 transform -translate-x-1/2 translate-y-3/4 -rotate-45">
+                      <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                  <!-- Step 4 - Two Paths -->
+                  <div class="flex w-full justify-around mb-10">
+                    <!-- Success Path -->
+                    <div class="w-5/12 bg-green-50 p-3 rounded-lg border border-green-200">
+                      <div class="flex items-center">
+                        <div class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">4A</div>
+                        <div>
+                          <div class="font-semibold text-green-800">Proceed</div>
+                          <div class="text-sm text-green-700">Continue with invoice creation</div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Error Path -->
+                    <div class="w-5/12 bg-red-50 p-3 rounded-lg border border-red-200">
+                      <div class="flex items-center">
+                        <div class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">4B</div>
+                        <div>
+                          <div class="font-semibold text-red-800">Alert User</div>
+                          <div class="text-sm text-red-700">Show warranty alert with details</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Step 5 - User Decision -->
+                  <div class="w-full max-w-md bg-indigo-50 p-3 rounded-lg border border-indigo-200 mb-8 relative">
+                    <div class="flex items-center">
+                      <div class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">5</div>
+                      <div>
+                        <div class="font-semibold text-indigo-800">User Decision</div>
+                        <div class="text-sm text-indigo-700">User decides to proceed, or cancel</div>
+                      </div>
+                    </div>
+                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full">
+                      <svg class="w-6 h-6 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  
+                  <!-- Step 6 - Completion -->
+                  <div class="w-full max-w-md bg-teal-50 p-3 rounded-lg border border-teal-200">
+                    <div class="flex items-center">
+                      <div class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">6</div>
+                      <div>
+                        <div class="font-semibold text-teal-800">Process Completion</div>
+                        <div class="text-sm text-teal-700">System finalizes invoice with validated serial numbers</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Detailed System Functionality -->
+    <div>
+      <h5 class="text-2xl font-bold mb-2">Detailed System Functionality</h5>
+      <p class="mb-2"><strong>Warranty Verification:</strong></p>
+      <ul class="list-disc ml-6 mb-4">
+        <li>During invoice creation, the system cross-checks the serial numbers against the warranty registration records.</li>
+        <li>If an item is found to be already registered, the system triggers an alert.</li>
+      
+      </ul>
+      <p class="mb-2"><strong>User Alert & Decision:</strong></p>
+      <ul class="list-disc ml-6">
+        <li>The user receives an alert prompting them to decide whether to proceed with or cancel the invoice process.</li>
 
+      </ul>
+    </div>
+    <div>
+      <h5 class="text-2xl font-bold mb-2">Benefits</h5>
+      <ul class="list-disc ml-6">
+        <li>Prevents duplicate warranty registrations, ensuring accurate product records.</li>
+        <li>Enhances quality control by catching potential errors early during invoice creation.</li>
+        <li>Maintains product integrity and builds customer trust through reliable record-keeping.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+   
   </section>
 
 
@@ -614,23 +1675,28 @@
 
   <!-- JavaScript for Tab Transitions, Section Fade-In, and Project Link Handling -->
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // Tab transitions for Projects
-      const tabs = document.querySelectorAll('.tab-button');
-      const contents = document.querySelectorAll('.tab-content');
+    document.addEventListener('DOMContentLoaded', function () {
+      // Tab functionality
+      const tabButtons = document.querySelectorAll('.tab-button');
+      const tabContents = document.querySelectorAll('.tab-content');
 
-      tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-          // Remove active class from all tabs and contents
-          tabs.forEach(t => t.classList.remove('active'));
-          contents.forEach(c => c.classList.remove('active'));
+      tabButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          const tabId = this.getAttribute('data-tab');
 
-          // Add active class to clicked tab and corresponding content
-          tab.classList.add('active');
-          const target = document.getElementById(tab.dataset.tab);
-          target.classList.add('active');
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          tabContents.forEach(content => content.classList.remove('active'));
+
+          this.classList.add('active');
+          document.getElementById(tabId).classList.add('active');
         });
       });
+
+      // Show first tab by default
+      if (tabButtons.length > 0 && tabContents.length > 0) {
+        tabButtons[0].classList.add('active');
+        tabContents[0].classList.add('active');
+      }
 
       // Intersection Observer for section fade-in effects
       const faders = document.querySelectorAll('.fade-in');
@@ -646,32 +1712,29 @@
           }
         });
       }, appearOptions);
-      // ... existing code ...
 
       faders.forEach(fader => {
         appearOnScroll.observe(fader);
       });
 
-      // Handle project details toggle buttons
-      const projectLinks = document.querySelectorAll('.project-link');
-      projectLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          
-          // Find the parent tab content and the details section within it
-          const tabContent = link.closest('.tab-content');
-          const projectId = tabContent.id.replace('project', '');
-          const detailsSection = document.getElementById('moreDetails' + projectId);
-          
-          // Toggle visibility and button text
-          if (detailsSection) {
-            detailsSection.classList.toggle('hidden');
-            link.textContent = detailsSection.classList.contains('hidden') ? 'View More Details' : 'Hide Details';
-          } else {
-            alert('Project details coming soon!');
-          }
-        });
-      });
+      // Toggle Details functionality for all projects (1 through 10)
+      for (let i = 1; i <= 10; i++) {
+        const toggleBtn = document.getElementById(`toggleDetailsBtn${i}`);
+        const moreDetails = document.getElementById(`moreDetails${i}`);
+        
+        if (toggleBtn && moreDetails) {
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            moreDetails.classList.toggle('hidden');
+            
+            if (moreDetails.classList.contains('hidden')) {
+              toggleBtn.textContent = 'View More Details';
+            } else {
+              toggleBtn.textContent = 'Hide Details';
+            }
+          });
+        }
+      }
     });
   </script>
 </body>
