@@ -197,110 +197,161 @@
           <li>API Integrations, API REST integration</li>
           <li>Problem Solving, Teamwork, Time Management, Adaptability</li>
           <li>Maven, Git, MVC, SuiteCloud (SuiteScript, SuiteTalk, SuiteFlow), NSPB</li>
-          <li><strong>SuiteScript Developer</strong></li>
+          <li>SuiteScript Developer</li>
         </ul>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="fade-in container mx-auto px-6 py-16 bg-gray-50">
-    <h3 class="text-4xl font-bold text-center mb-12">Projects</h3>
-    <div class="max-w-4xl mx-auto">
-      <div class="tab-navigation">
-        <button class="tab-button active" data-tab="project4">
-          Serial Number Customization
-        </button>
-        <button class="tab-button" data-tab="project5">
-          Disassembly Item
-        </button>
-        <button class="tab-button" data-tab="project6">
-          Integration with IRBM
-        </button>
-        <button class="tab-button" data-tab="project7">
-          EFT Customization
-        </button>
-        <button class="tab-button" data-tab="project8">
-          Price Log Change
-        </button>
-        <button class="tab-button" data-tab="project9">
-          Warranty Check
-        </button>
-      </div>
-
-      <!-- Serial Number Customization -->
-      <div id="project4" class="tab-content active">
-        <h4 class="text-3xl font-bold mb-4">Serial Number Customization</h4>
-        <p class="text-lg mb-6">
-          This project revolutionizes inventory management by streamlining the bulk submission of serial numbers during item receipt, and enabling intelligent, FIFO-based selection during delivery orders for accurate tracking.
-        </p>
-        <a
-          href="#"
-          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-          >View Project</a>
-      </div>
-
-      <!-- Disassembly Item -->
-      <div id="project5" class="tab-content">
-        <h4 class="text-3xl font-bold mb-4">Disassembly Item</h4>
-        <p class="text-lg mb-6">
-          Transforming product lifecycle management, this solution automates the breakdown of disassembled items into serialized and non-serialized components while ensuring precise inventory adjustments.
-        </p>
-        <a
-          href="#"
-          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-          >View Project</a>
-      </div>
-
-      <!-- Integration with IRBM -->
-      <div id="project6" class="tab-content">
-        <h4 class="text-3xl font-bold mb-4">Integration with IRBM</h4>
-        <p class="text-lg mb-6">
-          Bridging the gap between systems, this integration seamlessly connects NetSuite with LHDN to automate invoice submission and validation, enhancing financial compliance and operational efficiency.
-        </p>
-        <a
-          href="#"
-          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-          >View Project</a>
-      </div>
-
-      <!-- EFT Customization -->
-      <div id="project7" class="tab-content">
-        <h4 class="text-3xl font-bold mb-4">EFT Customization</h4>
-        <p class="text-lg mb-6">
-          A tailored solution for financial operations, this project customizes EFT templates for leading banks to ensure secure, compliant, and efficient transaction processing.
-        </p>
-        <a
-          href="#"
-          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-          >View Project</a>
-      </div>
-
-      <!-- Price Log Change -->
-      <div id="project8" class="tab-content">
-        <h4 class="text-3xl font-bold mb-4">Price Log Change for Item</h4>
-        <p class="text-lg mb-6">
-          This solution provides a dynamic system to update item pricing in real time, ensuring accuracy and competitiveness in rapidly changing market conditions.
-        </p>
-        <a
-          href="#"
-          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-          >View Project</a>
-      </div>
-
-      <!-- Warranty Check -->
-      <div id="project9" class="tab-content">
-        <h4 class="text-3xl font-bold mb-4">Warranty Check</h4>
-        <p class="text-lg mb-6">
-          Enhancing quality control, this tool verifies the uniqueness of serial numbers on invoices, effectively preventing duplicates and ensuring product integrity.
-        </p>
-        <a
-          href="#"
-          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-          >View Project</a>
-      </div>
+  <!-- Projects Section -->
+<section id="projects" class="fade-in container mx-auto px-6 py-16 bg-gray-50">
+  <h3 class="text-4xl font-bold text-center mb-12">Projects</h3>
+  <div class="max-w-4xl mx-auto">
+    <div class="tab-navigation">
+      <button class="tab-button active" data-tab="project4">
+        Serial Number Customization
+      </button>
+      <button class="tab-button" data-tab="project5">
+        Disassembly Item
+      </button>
+      <button class="tab-button" data-tab="project6">
+        Integration with IRBM
+      </button>
+      <button class="tab-button" data-tab="project7">
+        EFT Customization
+      </button>
+      <button class="tab-button" data-tab="project8">
+        Price Log Change
+      </button>
+      <button class="tab-button" data-tab="project9">
+        Warranty Check
+      </button>
     </div>
-  </section>
+
+    <!-- Serial Number Customization -->
+    <div id="project4" class="tab-content active">
+      <h4 class="text-3xl font-bold mb-4">Serial Number Customization</h4>
+      <!-- Expanded Project Description -->
+      <div class="space-y-6 text-lg">
+        <p>
+          This project revolutionizes inventory management by streamlining the bulk submission of serial numbers during item receipt and enabling intelligent, FIFO-based selection during delivery orders for accurate tracking.
+        </p>
+
+        <!-- Overview -->
+        <div>
+          <h5 class="text-2xl font-bold mb-2">Overview</h5>
+          <p>
+            The solution allows users to assign serial numbers in bulk (up to 8,000 at a time) during Item Receipt (IR) and then automatically selects the oldest serial numbers for Delivery Orders (DO) using a FIFO method.
+          </p>
+        </div>
+
+        <!-- Key Objectives -->
+        <div>
+          <h5 class="text-2xl font-bold mb-2">Key Objectives</h5>
+          <ul class="list-disc ml-6">
+            <li>Streamline data entry by supporting bulk submission during IR.</li>
+            <li>Ensure accurate tracking with FIFO-based serial number selection during DO.</li>
+            <li>Reduce manual errors and processing time.</li>
+            <li>Improve inventory traceability and operational efficiency.</li>
+          </ul>
+        </div>
+
+        <!-- Detailed System Functionality -->
+        <div>
+          <h5 class="text-2xl font-bold mb-2">Detailed System Functionality</h5>
+          <p class="mb-2"><strong>Item Receipt (IR):</strong></p>
+          <ul class="list-disc ml-6 mb-4">
+            <li>
+              Users click "Assign Serial Number" and enter up to 8,000 serial numbers at one shot.
+            </li>
+            <li>
+              The system validates the entries (checking for duplicates or errors) and updates the IR record instantly.
+            </li>
+          </ul>
+          <p class="mb-2"><strong>Delivery Order (DO):</strong></p>
+          <ul class="list-disc ml-6">
+            <li>
+              Upon clicking "Assign Serial Number," users can manually enter or automatically select serial numbers.
+            </li>
+            <li>
+              The system uses a FIFO approach based on creation dates, ensuring the oldest numbers are used first.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Benefits -->
+        <div>
+          <h5 class="text-2xl font-bold mb-2">Benefits</h5>
+          <ul class="list-disc ml-6">
+            <li>Operational efficiency is improved by minimizing repetitive tasks.</li>
+            <li>Accurate inventory tracking reduces errors and simplifies audits.</li>
+            <li>User-friendly interface and real-time feedback streamline workflows.</li>
+            <li>Scalable design supports large-scale inventory operations.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Optionally, you can keep a link for additional interactions -->
+      <a
+        href="#"
+        class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6"
+        >View More Details</a>
+    </div>
+
+    <!-- Other Projects -->
+    <div id="project5" class="tab-content">
+      <h4 class="text-3xl font-bold mb-4">Disassembly Item</h4>
+      <p class="text-lg mb-6">
+        Transforming product lifecycle management, this solution automates the breakdown of disassembled items into serialized and non-serialized components while ensuring precise inventory adjustments.
+      </p>
+      <a
+        href="#"
+        class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
+        >View Project</a>
+    </div>
+    <div id="project6" class="tab-content">
+      <h4 class="text-3xl font-bold mb-4">Integration with IRBM</h4>
+      <p class="text-lg mb-6">
+        Bridging the gap between systems, this integration seamlessly connects NetSuite with LHDN to automate invoice submission and validation, enhancing financial compliance and operational efficiency.
+      </p>
+      <a
+        href="#"
+        class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
+        >View Project</a>
+    </div>
+    <div id="project7" class="tab-content">
+      <h4 class="text-3xl font-bold mb-4">EFT Customization</h4>
+      <p class="text-lg mb-6">
+        A tailored solution for financial operations, this project customizes EFT templates for leading banks to ensure secure, compliant, and efficient transaction processing.
+      </p>
+      <a
+        href="#"
+        class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
+        >View Project</a>
+    </div>
+    <div id="project8" class="tab-content">
+      <h4 class="text-3xl font-bold mb-4">Price Log Change for Item</h4>
+      <p class="text-lg mb-6">
+        This solution provides a dynamic system to update item pricing in real time, ensuring accuracy and competitiveness in rapidly changing market conditions.
+      </p>
+      <a
+        href="#"
+        class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
+        >View Project</a>
+    </div>
+    <div id="project9" class="tab-content">
+      <h4 class="text-3xl font-bold mb-4">Warranty Check</h4>
+      <p class="text-lg mb-6">
+        Enhancing quality control, this tool verifies the uniqueness of serial numbers on invoices, effectively preventing duplicates and ensuring product integrity.
+      </p>
+      <a
+        href="#"
+        class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
+        >View Project</a>
+    </div>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="bg-white py-6">
