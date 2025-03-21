@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,27 +8,28 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
     html {
       scroll-behavior: smooth;
     }
+
     body {
       font-family: 'Inter', sans-serif;
     }
+
     /* Fade-in animation for sections */
     .fade-in {
       opacity: 0;
       transform: translateY(20px);
       transition: opacity 1s ease, transform 1s ease;
     }
+
     .fade-in.visible {
       opacity: 1;
       transform: translateY(0);
     }
+
     /* Custom styles for tab navigation */
     .tab-navigation {
       display: flex;
@@ -35,12 +37,17 @@
       padding-bottom: 1rem;
       margin-bottom: 2rem;
       border-bottom: 1px solid #e5e7eb;
-      -ms-overflow-style: none; /* IE and Edge */
-      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
     }
+
     .tab-navigation::-webkit-scrollbar {
-      display: none; /* Chrome, Safari, Opera */
+      display: none;
+      /* Chrome, Safari, Opera */
     }
+
     /* Base styles for tab buttons */
     .tab-button {
       padding: 0.75rem 1.5rem;
@@ -52,15 +59,18 @@
       margin-right: 1rem;
       white-space: nowrap;
     }
+
     .tab-button:hover {
       background-color: #eff6ff;
       color: #2563eb;
     }
+
     .tab-button.active {
       background-color: #2563eb;
       color: #ffffff;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
+
     /* Base styles for tab content */
     .tab-content {
       transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -68,6 +78,7 @@
       transform: translateY(-10px);
       display: none;
     }
+
     .tab-content.active {
       opacity: 1;
       transform: translateY(0);
@@ -75,6 +86,7 @@
     }
   </style>
 </head>
+
 <body class="bg-gray-100 text-gray-900">
   <!-- Header -->
   <header class="bg-white shadow">
@@ -92,24 +104,18 @@
   </header>
 
   <!-- Hero Section -->
-  <section
-    id="home"
-    class="fade-in relative h-screen flex items-center justify-center text-center"
-  >
-    <div
-      class="absolute inset-0 bg-cover bg-center"
-      style="background-image: url('https://via.placeholder.com/1920x1080');"
-    ></div>
+  <section id="home" class="fade-in relative h-screen flex items-center justify-center text-center">
+    <div class="absolute inset-0 bg-cover bg-center"
+      style="background-image: url('https://via.placeholder.com/1920x1080');"></div>
     <div class="absolute inset-0 bg-black opacity-60"></div>
     <div class="relative z-10 text-white px-4">
       <h2 class="text-5xl font-bold mb-6">Welcome to My Profile</h2>
       <p class="text-xl mb-8">
-        Empowering businesses with tailored ERP solutions and expert SuiteScript development—driving efficiency and innovation.
+        Empowering businesses with tailored ERP solutions and expert SuiteScript development—driving efficiency and
+        innovation.
       </p>
-      <a
-        href="#projects"
-        class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-        >Explore My Work</a>
+      <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg">Explore My
+        Work</a>
     </div>
   </section>
 
@@ -118,19 +124,18 @@
     <div class="flex flex-col md:flex-row items-center">
       <div class="w-full md:w-1/3 mb-8 md:mb-0">
         <!-- Using the local image me.jpg -->
-        <img
-          src="me.jpg"
-          alt="Profile Picture"
-          class="rounded-full shadow-lg"
-        />
+        <img src="me.jpg" alt="Profile Picture" class="rounded-full shadow-lg" />
       </div>
       <div class="w-full md:w-2/3 md:pl-12">
         <h3 class="text-4xl font-bold mb-4">About Me</h3>
         <p class="text-lg mb-6">
-          With a strong background in ERP consulting and SuiteScript development, I specialize in optimizing workflows, automating processes, and delivering seamless digital transformations. My expertise bridges the gap between business needs and technical implementation, ensuring scalable, high-performance solutions.
+          With a strong background in ERP consulting and SuiteScript development, I specialize in optimizing workflows,
+          automating processes, and delivering seamless digital transformations. My expertise bridges the gap between
+          business needs and technical implementation, ensuring scalable, high-performance solutions.
         </p>
         <p class="text-lg">
-          Whether it's customizing ERP systems or crafting innovative functionalities, I take pride in delivering solutions that not only meet, but exceed modern business expectations.
+          Whether it's customizing ERP systems or crafting innovative functionalities, I take pride in delivering
+          solutions that not only meet, but exceed modern business expectations.
         </p>
       </div>
     </div>
@@ -143,7 +148,9 @@
       <div class="mb-10">
         <h4 class="text-2xl font-bold mb-2">Profile Summary</h4>
         <p class="text-lg">
-          As an ERP Technical Consultant and SuiteScript Developer, I have successfully designed and implemented customized solutions that streamline business operations. My work focuses on ERP customizations, SuiteScript automation, and API integrations, enhancing efficiency and system reliability.
+          As an ERP Technical Consultant and SuiteScript Developer, I have successfully designed and implemented
+          customized solutions that streamline business operations. My work focuses on ERP customizations, SuiteScript
+          automation, and API integrations, enhancing efficiency and system reliability.
         </p>
       </div>
       <div class="mb-10">
@@ -205,153 +212,151 @@
 
   <!-- Projects Section -->
   <!-- Projects Section -->
-<section id="projects" class="fade-in container mx-auto px-6 py-16 bg-gray-50">
-  <h3 class="text-4xl font-bold text-center mb-12">Projects</h3>
-  <div class="max-w-4xl mx-auto">
-    <div class="tab-navigation">
-      <button class="tab-button active" data-tab="project4">
-        Serial Number Customization
-      </button>
-      <button class="tab-button" data-tab="project5">
-        Disassembly Item
-      </button>
-      <button class="tab-button" data-tab="project6">
-        Integration with IRBM
-      </button>
-      <button class="tab-button" data-tab="project7">
-        EFT Customization
-      </button>
-      <button class="tab-button" data-tab="project8">
-        Price Log Change
-      </button>
-      <button class="tab-button" data-tab="project9">
-        Warranty Check
-      </button>
-    </div>
-
-    <!-- Serial Number Customization -->
-    <div id="project4" class="tab-content active">
-      <h4 class="text-3xl font-bold mb-4">Serial Number Customization</h4>
-      <!-- Brief Description -->
-      <div class="space-y-6 text-lg">
-        <p>
-          This project revolutionizes inventory management by streamlining the bulk submission of serial numbers during item receipt and enabling intelligent, FIFO-based selection during delivery orders for accurate tracking.
-        </p>
+  <section id="projects" class="fade-in container mx-auto px-6 py-16 bg-gray-50">
+    <h3 class="text-4xl font-bold text-center mb-12">Projects</h3>
+    <div class="max-w-4xl mx-auto">
+      <div class="tab-navigation">
+        <button class="tab-button active" data-tab="project4">
+          Serial Number Customization
+        </button>
+        <button class="tab-button" data-tab="project5">
+          Disassembly Item
+        </button>
+        <button class="tab-button" data-tab="project6">
+          Integration with IRBM
+        </button>
+        <button class="tab-button" data-tab="project7">
+          EFT Customization
+        </button>
+        <button class="tab-button" data-tab="project8">
+          Price Log Change
+        </button>
+        <button class="tab-button" data-tab="project9">
+          Warranty Check
+        </button>
       </div>
-      <!-- View More Details Button -->
-      <a
-        href="#"
-        id="toggleDetailsBtn"
-        class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6"
-      >View More Details</a>
-    
-      <!-- Hidden Detailed Content -->
-      <div id="moreDetails" class="mt-6 space-y-6 text-lg hidden">
-        <!-- Overview -->
-        <div>
-          <h5 class="text-2xl font-bold mb-2">Overview</h5>
+
+      <!-- Serial Number Customization -->
+      <div id="project4" class="tab-content active">
+        <h4 class="text-3xl font-bold mb-4">Serial Number Customization</h4>
+        <!-- Brief Description -->
+        <div class="space-y-6 text-lg">
           <p>
-            The solution allows users to assign serial numbers in bulk (up to 8,000 at a time) during Item Receipt (IR) and then automatically selects the oldest serial numbers for Delivery Orders (DO) using a FIFO method.
+            This project revolutionizes inventory management by streamlining the bulk submission of serial numbers
+            during item receipt and enabling intelligent, FIFO-based selection during delivery orders for accurate
+            tracking.
           </p>
         </div>
-        <!-- Key Objectives -->
-        <div>
-          <h5 class="text-2xl font-bold mb-2">Key Objectives</h5>
-          <ul class="list-disc ml-6">
-            <li>Streamline data entry by supporting bulk submission during IR.</li>
-            <li>Ensure accurate tracking with FIFO-based serial number selection during DO.</li>
-            <li>Reduce manual errors and processing time.</li>
-            <li>Improve inventory traceability and operational efficiency.</li>
-          </ul>
-        </div>
-        <!-- Detailed System Functionality -->
-        <div>
-          <h5 class="text-2xl font-bold mb-2">Detailed System Functionality</h5>
-          <p class="mb-2"><strong>Item Receipt (IR):</strong></p>
-          <ul class="list-disc ml-6 mb-4">
-            <li>
-              Users click "Assign Serial Number" and enter up to 8,000 serial numbers at one shot.
-            </li>
-            <li>
-              The system validates the entries (checking for duplicates or errors) and updates the IR record instantly.
-            </li>
-          </ul>
-          <p class="mb-2"><strong>Delivery Order (DO):</strong></p>
-          <ul class="list-disc ml-6">
-            <li>
-              Upon clicking "Assign Serial Number," users can manually enter or automatically select serial numbers.
-            </li>
-            <li>
-              The system uses a FIFO approach based on creation dates, ensuring the oldest numbers are used first.
-            </li>
-          </ul>
-        </div>
-        <!-- Benefits -->
-        <div>
-          <h5 class="text-2xl font-bold mb-2">Benefits</h5>
-          <ul class="list-disc ml-6">
-            <li>Operational efficiency is improved by minimizing repetitive tasks.</li>
-            <li>Accurate inventory tracking reduces errors and simplifies audits.</li>
-            <li>User-friendly interface and real-time feedback streamline workflows.</li>
-            <li>Scalable design supports large-scale inventory operations.</li>
-          </ul>
+        <!-- View More Details Button -->
+        <a href="#" id="toggleDetailsBtn"
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
+          More Details</a>
+
+        <!-- Hidden Detailed Content -->
+        <div id="moreDetails" class="mt-6 space-y-6 text-lg hidden">
+          <!-- Overview -->
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Overview</h5>
+            <p>
+              The solution allows users to assign serial numbers in bulk (up to 8,000 at a time) during Item Receipt
+              (IR) and then automatically selects the oldest serial numbers for Delivery Orders (DO) using a FIFO
+              method.
+            </p>
+          </div>
+          <!-- Key Objectives -->
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Key Objectives</h5>
+            <ul class="list-disc ml-6">
+              <li>Streamline data entry by supporting bulk submission during IR.</li>
+              <li>Ensure accurate tracking with FIFO-based serial number selection during DO.</li>
+              <li>Reduce manual errors and processing time.</li>
+              <li>Improve inventory traceability and operational efficiency.</li>
+            </ul>
+          </div>
+          <!-- Detailed System Functionality -->
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Detailed System Functionality</h5>
+            <p class="mb-2"><strong>Item Receipt (IR):</strong></p>
+            <ul class="list-disc ml-6 mb-4">
+              <li>
+                Users click "Assign Serial Number" and enter up to 8,000 serial numbers at one shot.
+              </li>
+              <li>
+                The system validates the entries (checking for duplicates or errors) and updates the IR record
+                instantly.
+              </li>
+            </ul>
+            <p class="mb-2"><strong>Delivery Order (DO):</strong></p>
+            <ul class="list-disc ml-6">
+              <li>
+                Upon clicking "Assign Serial Number," users can manually enter or automatically select serial numbers.
+              </li>
+              <li>
+                The system uses a FIFO approach based on creation dates, ensuring the oldest numbers are used first.
+              </li>
+            </ul>
+          </div>
+          <!-- Benefits -->
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Benefits</h5>
+            <ul class="list-disc ml-6">
+              <li>Operational efficiency is improved by minimizing repetitive tasks.</li>
+              <li>Accurate inventory tracking reduces errors and simplifies audits.</li>
+              <li>User-friendly interface and real-time feedback streamline workflows.</li>
+              <li>Scalable design supports large-scale inventory operations.</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Other Projects -->
-    <div id="project5" class="tab-content">
-      <h4 class="text-3xl font-bold mb-4">Disassembly Item</h4>
-      <p class="text-lg mb-6">
-        Transforming product lifecycle management, this solution automates the breakdown of disassembled items into serialized and non-serialized components while ensuring precise inventory adjustments.
-      </p>
-      <a
-        href="#"
-        class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-        >View Project</a>
+      <!-- Other Projects -->
+      <div id="project5" class="tab-content">
+        <h4 class="text-3xl font-bold mb-4">Disassembly Item</h4>
+        <p class="text-lg mb-6">
+          Transforming product lifecycle management, this solution automates the breakdown of disassembled items into
+          serialized and non-serialized components while ensuring precise inventory adjustments.
+        </p>
+        <a href="#" class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg">View
+          Project</a>
+      </div>
+      <div id="project6" class="tab-content">
+        <h4 class="text-3xl font-bold mb-4">Integration with IRBM</h4>
+        <p class="text-lg mb-6">
+          Bridging the gap between systems, this integration seamlessly connects NetSuite with LHDN to automate invoice
+          submission and validation, enhancing financial compliance and operational efficiency.
+        </p>
+        <a href="#" class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg">View
+          Project</a>
+      </div>
+      <div id="project7" class="tab-content">
+        <h4 class="text-3xl font-bold mb-4">EFT Customization</h4>
+        <p class="text-lg mb-6">
+          A tailored solution for financial operations, this project customizes EFT templates for leading banks to
+          ensure secure, compliant, and efficient transaction processing.
+        </p>
+        <a href="#" class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg">View
+          Project</a>
+      </div>
+      <div id="project8" class="tab-content">
+        <h4 class="text-3xl font-bold mb-4">Price Log Change for Item</h4>
+        <p class="text-lg mb-6">
+          This solution provides a dynamic system to update item pricing in real time, ensuring accuracy and
+          competitiveness in rapidly changing market conditions.
+        </p>
+        <a href="#" class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg">View
+          Project</a>
+      </div>
+      <div id="project9" class="tab-content">
+        <h4 class="text-3xl font-bold mb-4">Warranty Check</h4>
+        <p class="text-lg mb-6">
+          Enhancing quality control, this tool verifies the uniqueness of serial numbers on invoices, effectively
+          preventing duplicates and ensuring product integrity.
+        </p>
+        <a href="#" class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg">View
+          Project</a>
+      </div>
     </div>
-    <div id="project6" class="tab-content">
-      <h4 class="text-3xl font-bold mb-4">Integration with IRBM</h4>
-      <p class="text-lg mb-6">
-        Bridging the gap between systems, this integration seamlessly connects NetSuite with LHDN to automate invoice submission and validation, enhancing financial compliance and operational efficiency.
-      </p>
-      <a
-        href="#"
-        class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-        >View Project</a>
-    </div>
-    <div id="project7" class="tab-content">
-      <h4 class="text-3xl font-bold mb-4">EFT Customization</h4>
-      <p class="text-lg mb-6">
-        A tailored solution for financial operations, this project customizes EFT templates for leading banks to ensure secure, compliant, and efficient transaction processing.
-      </p>
-      <a
-        href="#"
-        class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-        >View Project</a>
-    </div>
-    <div id="project8" class="tab-content">
-      <h4 class="text-3xl font-bold mb-4">Price Log Change for Item</h4>
-      <p class="text-lg mb-6">
-        This solution provides a dynamic system to update item pricing in real time, ensuring accuracy and competitiveness in rapidly changing market conditions.
-      </p>
-      <a
-        href="#"
-        class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-        >View Project</a>
-    </div>
-    <div id="project9" class="tab-content">
-      <h4 class="text-3xl font-bold mb-4">Warranty Check</h4>
-      <p class="text-lg mb-6">
-        Enhancing quality control, this tool verifies the uniqueness of serial numbers on invoices, effectively preventing duplicates and ensuring product integrity.
-      </p>
-      <a
-        href="#"
-        class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg"
-        >View Project</a>
-    </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- Footer -->
@@ -383,7 +388,7 @@
           // Remove active class from all tabs and contents
           tabs.forEach(t => t.classList.remove('active'));
           contents.forEach(c => c.classList.remove('active'));
-          
+
           // Add active class to clicked tab and corresponding content
           tab.classList.add('active');
           const target = document.getElementById(tab.dataset.tab);
@@ -399,15 +404,15 @@
 
       const appearOnScroll = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-          if(entry.isIntersecting) {
+          if (entry.isIntersecting) {
             entry.target.classList.add('visible');
             observer.unobserve(entry.target);
           }
         });
       }, appearOptions);
-// ... existing code ...
+      // ... existing code ...
 
-faders.forEach(fader => {
+      faders.forEach(fader => {
         appearOnScroll.observe(fader);
       });
 
@@ -416,7 +421,7 @@ faders.forEach(fader => {
       projectLinks.forEach(link => {
         link.addEventListener('click', (e) => {
           e.preventDefault();
-          
+
           // Check if this is the "View More Details" button
           if (link.id === 'toggleDetailsBtn') {
             const detailsSection = document.getElementById('moreDetails');
@@ -428,7 +433,7 @@ faders.forEach(fader => {
         });
       });
     });
-// ... existing code ...
   </script>
 </body>
+
 </html>
