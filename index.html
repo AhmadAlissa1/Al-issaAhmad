@@ -310,52 +310,289 @@
       </div>
 
       <!-- Other Projects -->
+      <!-- Disassembly Item (project5) -->
       <div id="project5" class="tab-content">
         <h4 class="text-3xl font-bold mb-4">Disassembly Item</h4>
-        <p class="text-lg mb-6">
-          Transforming product lifecycle management, this solution automates the breakdown of disassembled items into
-          serialized and non-serialized components while ensuring precise inventory adjustments.
-        </p>
-        <a href="#" class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg">View
-          Project</a>
+        <div class="space-y-6 text-lg">
+          <p>
+            Transforming product lifecycle management, this solution automates the breakdown of disassembled items into
+            serialized and non-serialized components while ensuring precise inventory adjustments.
+          </p>
+        </div>
+        <a href="#" id="toggleDetailsBtnDisassembly"
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
+          More Details</a>
+        <div id="moreDetails" class="mt-6 space-y-6 text-lg hidden">
+          <!-- Detailed content for Disassembly Item -->
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Overview</h5>
+            <p>
+              Users create a disassembly item record containing the main item and its sub-items (components) along with
+              the corresponding quantities.
+            </p>
+          </div>
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Key Objectives</h5>
+            <ul class="list-disc ml-6">
+              <li>Create a record with a main item and a sublist of components and quantities.</li>
+              <li>Allow users to key in price, rate, and serial number (if applicable) for serialized components.</li>
+              <li>Automatically generate inventory adjustments upon submission.</li>
+              <li>Enhance accuracy and reduce manual processing errors.</li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Detailed System Functionality</h5>
+            <p class="mb-2"><strong>Record Creation:</strong></p>
+            <ul class="list-disc ml-6 mb-4">
+              <li>Users create a disassembly record that includes the main item and sub-items with their quantities.
+              </li>
+            </ul>
+            <p class="mb-2"><strong>Disassembly Action:</strong></p>
+            <ul class="list-disc ml-6 mb-4">
+              <li>After saving the record, users click "Disassemble Item" to proceed.</li>
+              <li>For serialized components, the system prompts for price, rate, and serial number details.</li>
+            </ul>
+            <p class="mb-2"><strong>Inventory Adjustments:</strong></p>
+            <ul class="list-disc ml-6">
+              <li>The system automatically deducts the main item from inventory and adds the disassembled components.
+              </li>
+              <li>All adjustments are validated to ensure data accuracy.</li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Benefits</h5>
+            <ul class="list-disc ml-6">
+              <li>Automates and simplifies the disassembly process.</li>
+              <li>Improves inventory accuracy by automatically generating adjustments.</li>
+              <li>Minimizes manual entry errors and increases operational efficiency.</li>
+              <li>Ensures traceability for both serialized and non-serialized components.</li>
+            </ul>
+          </div>
+        </div>
       </div>
+
       <div id="project6" class="tab-content">
         <h4 class="text-3xl font-bold mb-4">Integration with IRBM</h4>
-        <p class="text-lg mb-6">
-          Bridging the gap between systems, this integration seamlessly connects NetSuite with LHDN to automate invoice
-          submission and validation, enhancing financial compliance and operational efficiency.
-        </p>
-        <a href="#" class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg">View
-          Project</a>
+        <div class="space-y-6 text-lg">
+          <p>
+            Bridging the gap between systems, this integration seamlessly connects NetSuite with LHDN to automate
+            invoice submission and validation, enhancing financial compliance and operational efficiency.
+          </p>
+        </div>
+        <a href="#" id="toggleDetailsBtnIRBM"
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
+          More Details</a>
+        <div id="moreDetails" class="mt-6 space-y-6 text-lg hidden">
+          <!-- Detailed content for Integration with IRBM -->
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Overview</h5>
+            <p>
+              NetSuite integrates with Inland Revenue Malaysia (LHDN) to manage invoices, credit memos, customer
+              refunds, and debit notes. This seamless integration automates invoice submission and validation, ensuring
+              near real-time feedback from LHDN.
+            </p>
+          </div>
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Key Objectives</h5>
+            <ul class="list-disc ml-6">
+              <li>Automate the creation and submission of financial documents from NetSuite to LHDN.</li>
+              <li>Retrieve validation results in near real-time to inform users of any discrepancies.</li>
+              <li>Enable invoice cancellation through a dedicated API call after validation.</li>
+              <li>Provide additional APIs to retrieve detailed status, notifications, and supplier invoice details.</li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Detailed System Functionality</h5>
+            <p class="mb-2"><strong>Invoice Generation & Submission:</strong></p>
+            <ul class="list-disc ml-6 mb-4">
+              <li>Users create invoices, credit memos, customer refunds, or debit notes within NetSuite.</li>
+              <li>Documents are automatically submitted to LHDN via an API call for validation.</li>
+            </ul>
+            <p class="mb-2"><strong>Real-Time Validation:</strong></p>
+            <ul class="list-disc ml-6 mb-4">
+              <li>The system retrieves validation results from LHDN in near real-time.</li>
+              <li>Validation feedback is presented to the user, highlighting any errors or required actions.</li>
+            </ul>
+            <p class="mb-2"><strong>Post-Validation Actions:</strong></p>
+            <ul class="list-disc ml-6">
+              <li>Users can cancel an invoice through a dedicated API request if errors are found or corrections are
+                needed.</li>
+              <li>Additional APIs allow for retrieving detailed invoice statuses, receiving notifications, and
+                processing supplier invoices.</li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Benefits</h5>
+            <ul class="list-disc ml-6">
+              <li>Enhances financial compliance by ensuring all documents adhere to LHDN regulations.</li>
+              <li>Reduces manual errors and accelerates the processing of financial transactions.</li>
+              <li>Provides real-time validation and actionable feedback, improving overall operational efficiency.</li>
+              <li>Supports additional functionalities via APIs for a comprehensive financial integration solution.</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div id="project7" class="tab-content">
         <h4 class="text-3xl font-bold mb-4">EFT Customization</h4>
-        <p class="text-lg mb-6">
-          A tailored solution for financial operations, this project customizes EFT templates for leading banks to
-          ensure secure, compliant, and efficient transaction processing.
-        </p>
-        <a href="#" class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg">View
-          Project</a>
+        <div class="space-y-6 text-lg">
+          <p>
+            A tailored solution for financial operations, this project customizes EFT templates to meet the requirements
+            of banks such as Mizuho, MUFG, SMBC, and HSBC, and generates payment files in XML or TXT format using BFO
+            FreeMaker.
+          </p>
+        </div>
+        <a href="#" id="toggleDetailsBtnEFT"
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
+          More Details</a>
+        <div id="moreDetails" class="mt-6 space-y-6 text-lg hidden">
+          <!-- Detailed content for EFT Customization -->
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Overview</h5>
+            <p>
+              This project focuses on generating EFT templates that comply with the standards of leading banks,
+              including Mizuho, MUFG, SMBC, and HSBC. Payment files are generated in XML or TXT format using BFO
+              FreeMaker.
+            </p>
+          </div>
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Key Objectives</h5>
+            <ul class="list-disc ml-6">
+              <li>Customize EFT templates to meet specific bank requirements.</li>
+              <li>Generate payment files in XML or TXT format using BFO FreeMaker.</li>
+              <li>Include support for banks such as Mizuho, MUFG, SMBC, and HSBC.</li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Detailed System Functionality</h5>
+            <p class="mb-2"><strong>Template Customization:</strong></p>
+            <ul class="list-disc ml-6 mb-4">
+              <li>Design EFT templates that conform to the standards of each supported bank.</li>
+              <li>Utilize BFO FreeMaker to populate the templates with payment data.</li>
+            </ul>
+            <p class="mb-2"><strong>File Generation:</strong></p>
+            <ul class="list-disc ml-6">
+              <li>Generate final payment files in XML or TXT format, ready for bank processing.</li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Benefits</h5>
+            <ul class="list-disc ml-6">
+              <li>Ensures compliance with the requirements of multiple leading banks.</li>
+              <li>Simplifies the generation of standardized EFT payment files.</li>
+              <li>Streamlines financial operations by automating template generation.</li>
+            </ul>
+          </div>
+        </div>
       </div>
+      <!-- Price Log Change for Item (project8) -->
       <div id="project8" class="tab-content">
         <h4 class="text-3xl font-bold mb-4">Price Log Change for Item</h4>
-        <p class="text-lg mb-6">
-          This solution provides a dynamic system to update item pricing in real time, ensuring accuracy and
-          competitiveness in rapidly changing market conditions.
-        </p>
-        <a href="#" class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg">View
-          Project</a>
+        <div class="space-y-6 text-lg">
+          <p>
+            This solution provides a dynamic system to record item pricing changes in real time, ensuring transparency
+            and a comprehensive audit trail in rapidly changing market conditions.
+          </p>
+        </div>
+        <a href="#" id="toggleDetailsBtnPrice"
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
+          More Details</a>
+        <div id="moreDetails" class="mt-6 space-y-6 text-lg hidden">
+          <!-- Detailed content for Price Log Change for Item -->
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Overview</h5>
+            <p>
+              The system is designed to log any pricing changes made to an item. It records details such as the
+              timestamp of the change, the user who performed the update, and both the old and new prices, generating a
+              comprehensive report for audit and analysis purposes.
+            </p>
+          </div>
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Key Objectives</h5>
+            <ul class="list-disc ml-6">
+              <li>Record every change in item pricing without altering the live price.</li>
+              <li>Capture essential details: timestamp, user, old price, and new price.</li>
+              <li>Generate a detailed report for audit and pricing strategy review.</li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Detailed System Functionality</h5>
+            <p class="mb-2"><strong>Change Logging:</strong></p>
+            <ul class="list-disc ml-6 mb-4">
+              <li>When a price change is attempted, the system logs the current price and the proposed new price along
+                with the date/time and user details.</li>
+            </ul>
+            <p class="mb-2"><strong>Reporting:</strong></p>
+            <ul class="list-disc ml-6">
+              <li>A comprehensive report is generated that records all pricing changes, providing a clear audit trail
+                and supporting data for pricing reviews.</li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Benefits</h5>
+            <ul class="list-disc ml-6">
+              <li>Ensures transparency by maintaining an accurate log of pricing changes.</li>
+              <li>Provides an audit trail that facilitates compliance and review processes.</li>
+              <li>Supports strategic decision-making through detailed historical pricing data.</li>
+              <li>Improves accountability by clearly identifying who made each pricing change.</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div id="project9" class="tab-content">
         <h4 class="text-3xl font-bold mb-4">Warranty Check</h4>
-        <p class="text-lg mb-6">
-          Enhancing quality control, this tool verifies the uniqueness of serial numbers on invoices, effectively
-          preventing duplicates and ensuring product integrity.
-        </p>
-        <a href="#" class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg">View
-          Project</a>
+        <div class="space-y-6 text-lg">
+          <p>
+            Enhancing quality control, this tool verifies the uniqueness of serial numbers on invoices, effectively
+            preventing duplicates and ensuring product integrity.
+          </p>
+        </div>
+        <a href="#" id="toggleDetailsBtnWarranty"
+          class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6">View
+          More Details</a>
+        <div id="moreDetails" class="mt-6 space-y-6 text-lg hidden">
+          <!-- Detailed content for Warranty Check -->
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Overview</h5>
+            <p>
+              This tool is designed to verify the uniqueness of serial numbers during invoice creation to prevent
+              duplicate warranty registrations. It ensures that each item is only registered once, maintaining accurate
+              product records.
+            </p>
+          </div>
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Key Objectives</h5>
+            <ul class="list-disc ml-6">
+              <li>Check for items that have already been registered for warranty during invoice creation.</li>
+              <li>Alert the user if a duplicate serial number is detected.</li>
+              <li>Provide the option to continue with the invoice or cancel the action to avoid duplicate entries.</li>
+              <li>Enhance overall quality control and maintain product integrity.</li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Detailed System Functionality</h5>
+            <p class="mb-2"><strong>Warranty Verification:</strong></p>
+            <ul class="list-disc ml-6 mb-4">
+              <li>During invoice creation, the system cross-checks the serial numbers against the warranty registration
+                records.</li>
+              <li>If an item is found to be already registered, the system triggers an alert.</li>
+            </ul>
+            <p class="mb-2"><strong>User Alert & Decision:</strong></p>
+            <ul class="list-disc ml-6">
+              <li>The user receives an alert prompting them to decide whether to proceed with or cancel the invoice
+                process.</li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="text-2xl font-bold mb-2">Benefits</h5>
+            <ul class="list-disc ml-6">
+              <li>Prevents duplicate warranty registrations, ensuring accurate product records.</li>
+              <li>Enhances quality control by catching potential errors early during invoice creation.</li>
+              <li>Maintains product integrity and builds customer trust through reliable record-keeping.</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
+
   </section>
 
 
