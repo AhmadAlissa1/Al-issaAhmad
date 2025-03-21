@@ -232,12 +232,21 @@
     <!-- Serial Number Customization -->
     <div id="project4" class="tab-content active">
       <h4 class="text-3xl font-bold mb-4">Serial Number Customization</h4>
-      <!-- Expanded Project Description -->
+      <!-- Brief Description -->
       <div class="space-y-6 text-lg">
         <p>
           This project revolutionizes inventory management by streamlining the bulk submission of serial numbers during item receipt and enabling intelligent, FIFO-based selection during delivery orders for accurate tracking.
         </p>
-
+      </div>
+      <!-- View More Details Button -->
+      <a
+        href="#"
+        id="toggleDetailsBtn"
+        class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6"
+      >View More Details</a>
+    
+      <!-- Hidden Detailed Content -->
+      <div id="moreDetails" class="mt-6 space-y-6 text-lg hidden">
         <!-- Overview -->
         <div>
           <h5 class="text-2xl font-bold mb-2">Overview</h5>
@@ -245,7 +254,6 @@
             The solution allows users to assign serial numbers in bulk (up to 8,000 at a time) during Item Receipt (IR) and then automatically selects the oldest serial numbers for Delivery Orders (DO) using a FIFO method.
           </p>
         </div>
-
         <!-- Key Objectives -->
         <div>
           <h5 class="text-2xl font-bold mb-2">Key Objectives</h5>
@@ -256,7 +264,6 @@
             <li>Improve inventory traceability and operational efficiency.</li>
           </ul>
         </div>
-
         <!-- Detailed System Functionality -->
         <div>
           <h5 class="text-2xl font-bold mb-2">Detailed System Functionality</h5>
@@ -279,7 +286,6 @@
             </li>
           </ul>
         </div>
-
         <!-- Benefits -->
         <div>
           <h5 class="text-2xl font-bold mb-2">Benefits</h5>
@@ -291,11 +297,6 @@
           </ul>
         </div>
       </div>
-      <!-- Optionally, you can keep a link for additional interactions -->
-      <a
-        href="#"
-        class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-full text-lg inline-block mt-6"
-        >View More Details</a>
     </div>
 
     <!-- Other Projects -->
@@ -404,8 +405,9 @@
           }
         });
       }, appearOptions);
+// ... existing code ...
 
-      faders.forEach(fader => {
+faders.forEach(fader => {
         appearOnScroll.observe(fader);
       });
 
@@ -414,10 +416,19 @@
       projectLinks.forEach(link => {
         link.addEventListener('click', (e) => {
           e.preventDefault();
-          alert('Project details coming soon!');
+          
+          // Check if this is the "View More Details" button
+          if (link.id === 'toggleDetailsBtn') {
+            const detailsSection = document.getElementById('moreDetails');
+            detailsSection.classList.toggle('hidden');
+            link.textContent = detailsSection.classList.contains('hidden') ? 'View More Details' : 'Hide Details';
+          } else {
+            alert('Project details coming soon!');
+          }
         });
       });
     });
+// ... existing code ...
   </script>
 </body>
 </html>
