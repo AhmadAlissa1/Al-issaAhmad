@@ -1,0 +1,266 @@
+
+<div id="project9" class="tab-content">
+    <h4 class="text-3xl font-bold mb-4 flex items-center">
+      <i class="fas fa-shield-alt text-blue-600 mr-3"></i> Warranty Check
+    </h4>
+    <div class="space-y-6 text-lg">
+      <p>
+        Enhancing quality control, this tool verifies the uniqueness of serial numbers on invoices, effectively
+        preventing duplicates and ensuring product integrity.
+      </p>
+    </div>
+    
+    <a href="#" id="toggleDetailsBtn9"
+      class="project-link bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-full text-lg inline-block mt-6 font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">View
+      More Details</a>
+  
+    <!-- Hidden Detailed Content -->
+    <div id="moreDetails9" class="mt-6 space-y-6 text-lg hidden">
+      <!-- Detailed content for Warranty Check -->
+      <div>
+        <h5 class="text-2xl font-bold mb-2">Overview</h5>
+        <p>
+          This tool is designed to verify the uniqueness of serial numbers during invoice creation to prevent
+          duplicate warranty registrations. It ensures that each item is only registered once, maintaining accurate
+          product records.
+        </p>
+      </div>
+      
+      <!-- Enhanced Visual Demonstration -->
+      <div>
+        <h5 class="text-2xl font-bold mb-4">Visual Demonstration</h5>
+        
+        <!-- Project Visual Mockup -->
+        <div class="bg-white shadow-lg rounded-lg p-4 mb-6 border border-gray-200">
+          <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-1/2 p-4">
+              <div class="bg-gray-100 p-4 rounded-lg h-full">
+                <div class="font-mono text-sm mb-2 text-gray-600">// Invoice Creation</div>
+                <div class="bg-blue-100 text-blue-800 p-2 rounded mb-3 font-semibold">Serial Number Entry</div>
+                <div class="bg-white border border-gray-300 p-3 rounded mb-3">
+                  <div class="mb-3">
+                    <div class="text-gray-700 font-semibold mb-1">Customer:</div>
+                    <div class="bg-gray-50 p-2 rounded">
+                      <div class="text-gray-800">TechSphere Solutions</div>
+                      <div class="text-gray-600 text-sm">Account #: TSI-29845</div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="text-gray-700 font-semibold mb-1">Items:</div>
+                    <table class="min-w-full text-sm">
+                      <thead class="bg-gray-100">
+                        <tr>
+                          <th class="text-left p-2">Item</th>
+                          <th class="text-center p-2">Qty</th>
+                          <th class="text-left p-2">Serial #</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="border-t border-gray-200">
+                          <td class="p-2">Server X9</td>
+                          <td class="p-2 text-center">1</td>
+                          <td class="p-2">
+                            <input type="text" class="w-full p-1 border border-gray-300 rounded" value="SRV-X9-7842">
+                          </td>
+                        </tr>
+                        <tr class="border-t border-gray-200">
+                          <td class="p-2">Switch 24-Port</td>
+                          <td class="p-2 text-center">2</td>
+                          <td class="p-2">
+                            <input type="text" class="w-full p-1 border border-gray-300 rounded mb-1" value="NSW-24P-6723">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="flex justify-end">
+                  <div class="bg-blue-600 text-white px-3 py-1 rounded font-semibold text-sm">Validate & Continue</div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 p-4">
+              <div class="bg-gray-100 p-4 rounded-lg h-full">
+                <div class="font-mono text-sm mb-2 text-gray-600">// Warranty Alert</div>
+                <div class="bg-red-100 text-red-800 p-2 rounded mb-3 font-semibold">Duplicate Serial Number</div>
+                <div class="bg-white border border-red-300 p-3 rounded mb-3">
+                  <div class="text-center mb-3">
+                    <svg class="w-14 h-14 text-red-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                    </svg>
+                  </div>
+                  <div class="bg-red-50 border border-red-200 p-3 rounded mb-3">
+                    <div class="text-red-800 font-semibold mb-2">Serial number already registered:</div>
+                    <div class="bg-white p-2 rounded border border-red-300 font-mono">
+                      SRV-X9-7842
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="text-gray-700 font-semibold mb-1">Registration Details:</div>
+                    <div class="bg-gray-50 p-2 rounded text-sm">
+                      <div class="grid grid-cols-2 gap-2">
+                        <div class="text-gray-600">Invoice:</div>
+                        <div>INV-78932</div>
+                        <div class="text-gray-600">Date:</div>
+                        <div>March 10, 2023</div>
+                        <div class="text-gray-600">Customer:</div>
+                        <div>Globex Corporation</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex justify-end space-x-2">
+                  <div class="bg-gray-500 text-white px-3 py-1 rounded font-semibold text-sm">Back</div>
+                  <div class="bg-blue-600 text-white px-3 py-1 rounded font-semibold text-sm">Replace</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Enhanced Visualization - Warranty Check Process Flow -->
+        <div class="bg-white shadow-lg rounded-lg p-4 border border-gray-200">
+          <h6 class="text-xl font-bold mb-3">Warranty Check Process Flow</h6>
+          <div class="flex flex-col md:flex-row">
+            <div class="w-full p-4">
+              <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <div class="relative">
+                  <!-- Process Flow Diagram -->
+                  <div class="flex flex-col items-center">
+                    <!-- Step 1 -->
+                    <div class="w-full max-w-md bg-blue-50 p-3 rounded-lg border border-blue-200 mb-8 relative">
+                      <div class="flex items-center">
+                        <div class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">1</div>
+                        <div>
+                          <div class="font-semibold text-blue-800">Serial Number Entry</div>
+                          <div class="text-sm text-blue-700">User enters serial numbers during invoice creation</div>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full">
+                        <svg class="w-6 h-6 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="w-full max-w-md bg-purple-50 p-3 rounded-lg border border-purple-200 mb-8 relative">
+                      <div class="flex items-center">
+                        <div class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">2</div>
+                        <div>
+                          <div class="font-semibold text-purple-800">Database Validation</div>
+                          <div class="text-sm text-purple-700">System cross-checks against warranty registration records</div>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full">
+                        <svg class="w-6 h-6 text-purple-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    
+                    <!-- Step 3 - Decision -->
+                    <div class="w-full max-w-md bg-yellow-50 p-3 rounded-lg border border-yellow-200 mb-10 relative">
+                      <div class="flex items-center">
+                        <div class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">3</div>
+                        <div>
+                          <div class="font-semibold text-yellow-800">Decision Point</div>
+                          <div class="text-sm text-yellow-700">Is the serial number already registered?</div>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-1/4 transform -translate-x-1/2 translate-y-3/4 rotate-45">
+                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                      </div>
+                      <div class="absolute bottom-0 left-3/4 transform -translate-x-1/2 translate-y-3/4 -rotate-45">
+                        <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    
+                    <!-- Step 4 - Two Paths -->
+                    <div class="flex w-full justify-around mb-10">
+                      <!-- Success Path -->
+                      <div class="w-5/12 bg-green-50 p-3 rounded-lg border border-green-200">
+                        <div class="flex items-center">
+                          <div class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">4A</div>
+                          <div>
+                            <div class="font-semibold text-green-800">Proceed</div>
+                            <div class="text-sm text-green-700">Continue with invoice creation</div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Error Path -->
+                      <div class="w-5/12 bg-red-50 p-3 rounded-lg border border-red-200">
+                        <div class="flex items-center">
+                          <div class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">4B</div>
+                          <div>
+                            <div class="font-semibold text-red-800">Alert User</div>
+                            <div class="text-sm text-red-700">Show warranty alert with details</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Step 5 - User Decision -->
+                    <div class="w-full max-w-md bg-indigo-50 p-3 rounded-lg border border-indigo-200 mb-8 relative">
+                      <div class="flex items-center">
+                        <div class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">5</div>
+                        <div>
+                          <div class="font-semibold text-indigo-800">User Decision</div>
+                          <div class="text-sm text-indigo-700">User decides to proceed, or cancel</div>
+                        </div>
+                      </div>
+                      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full">
+                        <svg class="w-6 h-6 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    
+                    <!-- Step 6 - Completion -->
+                    <div class="w-full max-w-md bg-teal-50 p-3 rounded-lg border border-teal-200">
+                      <div class="flex items-center">
+                        <div class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0">6</div>
+                        <div>
+                          <div class="font-semibold text-teal-800">Process Completion</div>
+                          <div class="text-sm text-teal-700">System finalizes invoice with validated serial numbers</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Detailed System Functionality -->
+      <div>
+        <h5 class="text-2xl font-bold mb-2">Detailed System Functionality</h5>
+        <p class="mb-2"><strong>Warranty Verification:</strong></p>
+        <ul class="list-disc ml-6 mb-4">
+          <li>During invoice creation, the system cross-checks the serial numbers against the warranty registration records.</li>
+          <li>If an item is found to be already registered, the system triggers an alert.</li>
+        
+        </ul>
+        <p class="mb-2"><strong>User Alert & Decision:</strong></p>
+        <ul class="list-disc ml-6">
+          <li>The user receives an alert prompting them to decide whether to proceed with or cancel the invoice process.</li>
+  
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-2xl font-bold mb-2">Benefits</h5>
+        <ul class="list-disc ml-6">
+          <li>Prevents duplicate warranty registrations, ensuring accurate product records.</li>
+          <li>Enhances quality control by catching potential errors early during invoice creation.</li>
+          <li>Maintains product integrity and builds customer trust through reliable record-keeping.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
